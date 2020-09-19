@@ -32,3 +32,7 @@ footer {
     text-align: center;
     border-radius: 5px;
 }
+
+footer div a {
+    color: yellow;
+}
