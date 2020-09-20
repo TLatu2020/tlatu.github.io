@@ -1,7 +1,3 @@
-h1 {
-    font-family: 'Markazi Text', serif;
-}
-
 li {
     font-family: 'Cormorant', serif;
 }
@@ -19,7 +15,8 @@ header {
 }
 
 header h1 {
-    margin-left: 175px;
+    text-align: center;
+    font-family: 'Markazi Text', serif;
 }
 
 header img {
