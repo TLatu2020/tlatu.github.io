@@ -33,13 +33,29 @@ p {
     font-family: 'Roboto', sans-serif;
 }
 
+main h2 {
+    background-color: white;
+    padding: 10px;
+    margin: 0;
+    border-radius: 5px 5px 0 0;
+}
+
+main h3 {
+    font-size: 1.25em;
+}
+
 
 /*First Principle*/
 
 .firstprinciple {
-    background-color: olive;
+    background-color: lime;
     text-align: center;
     border-radius: 5px;
+}
+
+.firstparagraph {
+    padding: 1em;
+    font-weight: 600;
 }
 
 .imageone {
@@ -50,10 +66,14 @@ p {
 /*Second Principle*/
 
 .secondprinciple {
-    background-color: cornflowerblue;
+    background-color: lime;
     text-align: center;
-    color: #300;
     border-radius: 5px;
+}
+
+.secondparagraph {
+    padding: 1em;
+    font-weight: 600;
 }
 
 .imagetwo {
@@ -64,9 +84,14 @@ p {
 /*Third Principle*/
 
 .thirdprinciple {
-    background-color: olive;
+    background-color: lime;
     text-align: center;
     border-radius: 5px;
+}
+
+.thirdparagraph {
+    padding: 1em;
+    font-weight: 600;
 }
 
 .imagethree {
@@ -82,6 +107,10 @@ footer {
     border-radius: 5px;
     text-align: center;
     margin-top: 15px;
+}
+
+footer div a {
+    color: yellow;
 }
 
 
