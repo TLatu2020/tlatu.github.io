@@ -1,0 +1,8 @@
+@media (min-width: 32.5em) {
+    header img {
+        float: right;
+    }
+    header h1 {
+        margin-left: 175px;
+    }
+}
