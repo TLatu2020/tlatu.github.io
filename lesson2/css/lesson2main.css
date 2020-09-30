@@ -36,7 +36,7 @@ p {
 }
 
 main h2 {
-    background-color: white;
+    background-color: lime;
     padding: 10px;
     margin: 0;
     border-radius: 5px 5px 0 0;
@@ -50,7 +50,7 @@ main h3 {
 /*First Principle*/
 
 .firstprinciple {
-    background-color: lime;
+    background-color: white;
     text-align: center;
     border-radius: 5px;
 }
@@ -68,7 +68,7 @@ main h3 {
 /*Second Principle*/
 
 .secondprinciple {
-    background-color: lime;
+    background-color: white;
     text-align: center;
     border-radius: 5px;
 }
@@ -86,7 +86,7 @@ main h3 {
 /*Third Principle*/
 
 .thirdprinciple {
-    background-color: lime;
+    background-color: white;
     text-align: center;
     border-radius: 5px;
 }
