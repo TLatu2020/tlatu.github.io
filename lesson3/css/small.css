@@ -30,7 +30,7 @@ main p {
 header {
     text-align: center;
     background-color: #eadada;
-    max-width: 20em;
+    max-width: 22em;
     margin: auto;
     padding: 1rem;
 }
@@ -42,21 +42,18 @@ header img {
 
 nav ul {
     list-style-type: none;
-    text-align: center;
     padding: 0;
     font-size: 20px;
 }
 
 nav ul li {
-    padding: 1.5%;
+    padding: 1rem;
 }
 
 main {
     background-color: #eadada;
-    display: grid;
-    grid-template-columns: 1fr;
     border-radius: 0.5rem;
-    max-width: 20em;
+    max-width: 22em;
     margin: auto;
     padding: 1rem;
     text-align: center;
@@ -67,12 +64,16 @@ main img {
 }
 
 table,
-th,
 tr,
 td {
     border: 1px solid black;
     margin: auto;
-    padding: 0.5em;
+    border-collapse: collapse;
+}
+
+table tr,
+td {
+    padding: 5px;
 }
 
 table ul {

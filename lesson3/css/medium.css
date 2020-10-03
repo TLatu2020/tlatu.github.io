@@ -5,8 +5,11 @@
     header img {
         float: left;
     }
+    nav ul {
+        display: flex;
+    }
     nav ul li {
-        display: inline;
+        flex: 1 1 100%;
     }
     header {
         max-width: 100%;
