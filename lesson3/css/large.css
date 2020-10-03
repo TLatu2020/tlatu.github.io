@@ -7,4 +7,13 @@
         max-width: 50rem;
         margin: auto;
     }
+    #persona-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .personaone,
+    .personatwo {
+        max-width: 550px;
+        margin: auto;
+    }
 }

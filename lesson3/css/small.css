@@ -8,7 +8,8 @@ header h1 {
 }
 
 h2,
-h3 {
+h3,
+nav {
     font-family: 'Montserrat', sans-serif;
     font-weight: 650;
 }
@@ -73,14 +74,57 @@ td {
     padding: 0.5em;
 }
 
+table ul {
+    list-style-type: none;
+}
+
 main h3 {
     background-color: #eb7070;
     text-align: center;
     margin: 0;
 }
 
+main ol {
+    text-align: left;
+}
+
 footer {
     background-color: #eadada;
     text-align: center;
     padding: 0.5rem;
+}
+
+.primary {
+    background-color: #e7d9d9;
+}
+
+.secondary {
+    background-color: #3222de;
+    color: white;
+}
+
+.accentone {
+    background-color: #ffd30d;
+}
+
+.accenttwo {
+    background-color: #eb7070;
+}
+
+.sampleone {
+    font-family: 'Roboto Slab', serif;
+    font-size: 45px;
+}
+
+.sampletwo,
+.samplefour {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 650;
+}
+
+.samplethree {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    font-weight: 650;
 }
