@@ -10,6 +10,8 @@ header h1 {
 h2,
 h3 {
     font-family: 'Montserrat', sans-serif;
+    font-weight: 650;
+    font-size: 25px;
 }
 
 main p {
@@ -19,6 +21,8 @@ main p {
 header {
     text-align: center;
     background-color: #eadada;
+    max-width: 20em;
+    margin: auto;
     padding: 1rem;
 }
 
@@ -31,11 +35,11 @@ nav ul {
     list-style-type: none;
     text-align: center;
     padding: 0;
+    font-size: 20px;
 }
 
-nav ul li a {
-    display: block;
-    padding-top: 1%;
+nav ul li {
+    padding: 1.5%;
 }
 
 main {
@@ -43,7 +47,7 @@ main {
     display: grid;
     grid-template-columns: 1fr;
     border-radius: 0.5rem;
-    max-width: 35em;
+    max-width: 20em;
     margin: auto;
     padding: 1rem;
     text-align: center;

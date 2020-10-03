@@ -1,0 +1,13 @@
+@media (min-width: 35em) {
+    nav ul li {
+        display: inline;
+    }
+    header {
+        max-width: 100%;
+        padding: 1.5%;
+    }
+    main {
+        max-width: 35em;
+        margin: auto;
+    }
+}

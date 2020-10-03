@@ -1,0 +1,6 @@
+@media (min-width: 60em) {
+    main {
+        max-width: 100%;
+        border-radius: 0;
+    }
+}
