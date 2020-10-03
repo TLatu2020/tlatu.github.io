@@ -65,14 +65,12 @@ main img {
 }
 
 table,
+th,
 tr,
 td {
     border: 1px solid black;
-}
-
-td {
-    padding: 1%;
     margin: auto;
+    padding: 0.5em;
 }
 
 main h3 {
