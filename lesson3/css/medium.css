@@ -1,4 +1,10 @@
 @media (min-width: 35em) {
+    header h1 {
+        text-indent: -100px;
+    }
+    header img {
+        float: left;
+    }
     nav ul li {
         display: inline;
     }
