@@ -11,7 +11,7 @@ h2,
 h3,
 nav {
     font-family: 'Montserrat', sans-serif;
-    font-weight: 650;
+    font-weight: 600;
 }
 
 h2 {
@@ -19,11 +19,12 @@ h2 {
 }
 
 h3 {
-    font-size: 20px;
+    font-size: 25px;
 }
 
 main p {
-    font-family: 'Roboto' sans-serif;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
 }
 
 header {
@@ -116,15 +117,24 @@ footer {
     font-size: 45px;
 }
 
-.sampletwo,
-.samplefour {
+.sampletwo {
     font-family: 'Montserrat', sans-serif;
     font-size: 20px;
-    font-weight: 650;
+    font-weight: 600;
 }
 
 .samplethree {
     font-family: 'Montserrat', sans-serif;
     font-size: 30px;
-    font-weight: 650;
+    font-weight: 600;
+}
+
+.samplefour {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.samplefive {
+    font-size: 20px;
 }
