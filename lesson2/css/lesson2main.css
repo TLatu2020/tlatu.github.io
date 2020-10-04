@@ -64,7 +64,7 @@ main h3 {
 .imageone,
 .imagetwo,
 .imagethree {
-    max-width: 20em;
+    max-width: 20rem;
     border-style: solid;
 }
 
