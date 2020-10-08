@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/small.css">
     <link rel="stylesheet" href="css/large.css">
-    <script src=""></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Roboto+Slab:wght@100&family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <script src="js/script.js" defer></script>
 </head>
 
 <body>
@@ -17,13 +18,14 @@
         <h1>Weathers Downunder</h1>
     </header>
     <nav>
-        <ul>
-            <li>Home</li>
-            <li>Preston</li>
-            <li>Soda Spring</li>
-            <li>Fish Haven</li>
-            <li>Storm Center</li>
-            <li>Gallery</li>
+        <button onclick="toggleMenu()">&#9776;</button>
+        <ul id="primaryNav" class="hide">
+            <li><a href="#">Home</a></li>
+            <li class="active"><a href="#">Preston</a></li>
+            <li><a href="#">Soda Spring</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="#">Storm Center</a></li>
+            <li><a href="#">Gallery</a></li>
         </ul>
     </nav>
     <main>
