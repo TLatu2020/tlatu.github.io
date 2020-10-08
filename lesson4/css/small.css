@@ -10,6 +10,7 @@ nav {
     background-color: rgba(50, 34, 222, 0.9);
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
+    text-align: center;
 }
 
 nav ul {
@@ -42,17 +43,35 @@ nav ul.hide {
 header {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    justify-content: center;
+}
+
+header h1 {
+    justify-content: center;
 }
 
 header img {
     width: 75px;
 }
 
+.contentbox {
+    display: block;
+    margin: 10px auto;
+    border: 1px dashed #000;
+    padding: 15px;
+    color: #444;
+    font-style: italic;
+}
+
 footer {
-    background-color: #eadada;
+    background-color: rgba(50, 34, 222, 0.9);
+    color: white;
     text-align: center;
     padding: 0.5rem;
+}
+
+footer a {
+    color: yellow;
 }
 
 .clearfix:after {

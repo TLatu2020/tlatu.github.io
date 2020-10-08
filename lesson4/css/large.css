@@ -18,16 +18,14 @@
     nav ul.hide {
         display: block;
     }
-    nav ul {
-        margin-left: 2%;
-    }
     nav ul li {
-        float: left;
+        display: inline-flex;
     }
     nav ul li a {
         border: none;
         border-right: 1px solid rgba(0, 0, 0, 0.3);
         padding: .6rem 1rem;
+        flex-direction: row;
     }
     header img {
         width: 100px;
