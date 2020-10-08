@@ -1,4 +1,11 @@
 @media only screen and (min-width: 64rem) {
+    header h1 {
+        font-size: 45px;
+    }
+    header img {
+        width: 100px;
+        height: 100px;
+    }
     nav {
         /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#3222de+0,707bf9+100 */
         background: #3222de;
@@ -26,8 +33,5 @@
         border-right: 1px solid rgba(0, 0, 0, 0.3);
         padding: .6rem 1rem;
         flex-direction: row;
-    }
-    header img {
-        width: 100px;
     }
 }

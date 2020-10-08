@@ -47,11 +47,14 @@ header {
 }
 
 header h1 {
-    justify-content: center;
+    font-family: 'Roboto Slab', serif;
+    font-size: 35px;
 }
 
 header img {
     width: 75px;
+    height: 75px;
+    padding: .6rem 1rem;
 }
 
 .contentbox {
@@ -63,10 +66,23 @@ header img {
     font-style: italic;
 }
 
+main h2 {
+    text-align: center;
+    font-family: 'Robo Slab', sans-serif;
+    font-size: 30px;
+}
+
+main,
+footer {
+    max-width: 45rem;
+    margin: auto;
+}
+
 footer {
     background-color: rgba(50, 34, 222, 0.9);
     color: white;
     text-align: center;
+    font-size: 18px;
     padding: 0.5rem;
 }
 
