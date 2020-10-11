@@ -42,19 +42,27 @@ nav ul.hide {
 
 header {
     display: flex;
-    flex-direction: row;
     justify-content: center;
+    align-items: center;
 }
 
 header h1 {
     font-family: 'Roboto Slab', serif;
-    font-size: 35px;
+    font-size: 40px;
+    margin-bottom: 0;
 }
 
 header img {
     width: 75px;
     height: 75px;
     padding: .6rem 1rem;
+}
+
+.header-motto {
+    flex-direction: column;
+    margin-bottom: 15px;
+    text-align: center;
+    font-family: 'Montserret', sans-serif;
 }
 
 .contentbox {
