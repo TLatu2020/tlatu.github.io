@@ -80,12 +80,6 @@ main h2 {
     font-size: 30px;
 }
 
-main,
-footer {
-    max-width: 45rem;
-    margin: auto;
-}
-
 footer {
     background-color: rgba(50, 34, 222, 0.9);
     color: white;
