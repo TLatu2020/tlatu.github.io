@@ -3,7 +3,7 @@
         font-size: 45px;
     }
     .header-motto {
-        font-size: 18px;
+        font-size: 20px;
     }
     header img {
         width: 100px;
@@ -38,5 +38,9 @@
     nav ul li a {
         border: none;
         padding: .6rem 1rem;
+    }
+    main,
+    footer {
+        max-width: 45rem;
     }
 }
