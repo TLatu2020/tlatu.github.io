@@ -43,14 +43,16 @@ header img {
 }
 
 nav {
-    display: flex;
-    justify-content: center;
-    text-align: center;
+    background-color: #eadada;
+    max-width: 22em;
+    margin: auto;
 }
 
 nav ul {
     list-style-type: none;
     font-size: 20px;
+    text-align: center;
+    padding-inline-start: 0;
 }
 
 nav ul li {

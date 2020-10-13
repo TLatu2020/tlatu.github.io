@@ -2,8 +2,8 @@
     header img {
         float: left;
     }
-    nav {
-        flex-direction: row;
+    nav ul {
+        display: flex;
     }
     nav ul li {
         flex: 1 1 100%;
@@ -11,6 +11,9 @@
     header {
         max-width: 100%;
         padding: 1.5%;
+    }
+    nav {
+        max-width: 100%;
     }
     main {
         max-width: 35em;
