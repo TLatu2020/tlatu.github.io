@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 230 - Kakatisi Latu : Prestons Idaho Web Page</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Roboto+Slab:wght@100&family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <script src="js/script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <img src="images/weathersdownunder.png" alt="Weathers Downunder Logo">
+        <div class="header-motto">
+            <h1>Weathers Downunder</h1>
+            <div>The weathers downunder, but you don't have to be.</div>
+        </div>
+
+    </header>
+    <nav class="clearfix">
+        <button onclick="toggleMenu()">&#9776; Menu</button>
+        <ul id="primaryNav" class="hide">
+            <li><a href="#">Home</a></li>
+            <li class="active"><a href="#">Preston</a></li>
+            <li><a href="#">Soda Spring</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="#">Storm Center</a></li>
+            <li><a href="#">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Preston Idaho</h2>
+        <div class="contentbox">Hero w/ weather summary</div>
+        <div class="contentbox">5 Day Forecast</div>
+        <div class="contentbox">Article</div>
+        <div class="contentbox">Contact Information</div>
+    </main>
+    <footer>
+        <p>&copy; Weathers Downunder <span id="currentyear"></span> | Attributions | Kakatisi Latu</p>
+        <div>
+            <p id="currentdate"></p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

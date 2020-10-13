@@ -1,0 +1,99 @@
+nav button {
+    margin: .2rem 2%;
+    background-color: transparent;
+    border: none;
+    font-size: 1.6rem;
+    color: #fff;
+}
+
+nav {
+    background-color: rgba(50, 34, 222, 0.9);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li a {
+    display: block;
+    padding: .8rem 2%;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.8);
+    border-top: 1px solid #000;
+}
+
+nav ul li.active a {
+    background-color: rgba(255, 211, 13, 0.5);
+    color: black;
+}
+
+nav ul li a:hover {
+    background-color: #EB7070;
+}
+
+nav ul.hide {
+    display: none;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header h1 {
+    font-family: 'Roboto Slab', serif;
+    font-size: 35px;
+    margin-bottom: 0;
+}
+
+header img {
+    width: 75px;
+    height: 75px;
+    padding: .6rem 1rem;
+}
+
+.header-motto {
+    flex-direction: column;
+    margin-bottom: 15px;
+    text-align: center;
+    font-family: 'Montserret', sans-serif;
+}
+
+.contentbox {
+    display: block;
+    margin: 10px auto;
+    border: 1px dashed #000;
+    padding: 15px;
+    color: #444;
+    font-style: italic;
+}
+
+main h2 {
+    text-align: center;
+    font-family: 'Robo Slab', sans-serif;
+    font-size: 30px;
+}
+
+footer {
+    background-color: rgba(50, 34, 222, 0.9);
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    padding: 0.5rem;
+}
+
+footer a {
+    color: yellow;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
