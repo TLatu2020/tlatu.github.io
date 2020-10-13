@@ -1,16 +1,16 @@
 body {
-    background-color: #1d185c;
+    background-color: #e7d9d9;
 }
 
 header h1 {
+    color: #ffd30d;
     font-family: 'Roboto Slab', serif;
     font-size: 45px;
 }
 
 h2,
-h3,
-nav {
-    font-family: 'Montserrat', sans-serif;
+h3 {
+    font-family: 'Roboto Slab', serif;
     font-weight: 600;
 }
 
@@ -22,16 +22,11 @@ h3 {
     font-size: 25px;
 }
 
-main p {
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 20px;
-}
-
 header {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #eadada;
+    background-color: #1d185c;
     max-width: 22em;
     margin: auto;
     padding: 1rem;
@@ -43,14 +38,16 @@ header img {
 }
 
 nav {
-    background-color: #eadada;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    background-color: #1d185c;
     max-width: 22em;
     margin: auto;
 }
 
 nav ul {
     list-style-type: none;
-    font-size: 20px;
     text-align: center;
     padding-inline-start: 0;
 }
@@ -61,11 +58,14 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: blue;
+    color: #ffd30d;
 }
 
 main {
-    background-color: #eadada;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: #e7d9d9;
     border-radius: 0.5rem;
     max-width: 22em;
     margin: auto;
@@ -105,19 +105,24 @@ main ol {
 }
 
 footer {
-    background-color: #eadada;
+    background-color: #1d185c;
+    color: #e7d9d9;
     text-align: center;
     font-size: 18px;
     padding: 0.5rem;
 }
 
+footer div a {
+    color: #e7d9d9;
+}
+
 .primary {
-    background-color: #e7d9d9;
+    background-color: #1d185c;
+    color: white;
 }
 
 .secondary {
-    background-color: #3222de;
-    color: white;
+    background-color: #e7d9d9;
 }
 
 .accentone {
@@ -125,7 +130,7 @@ footer {
 }
 
 .accenttwo {
-    background-color: #eb7070;
+    background-color: #eb7573;
 }
 
 .sampleone {
