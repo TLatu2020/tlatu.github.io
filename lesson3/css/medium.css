@@ -1,12 +1,9 @@
 @media (min-width: 35em) {
-    header h1 {
-        text-indent: -100px;
-    }
     header img {
         float: left;
     }
-    nav ul {
-        display: flex;
+    nav {
+        flex-direction: row;
     }
     nav ul li {
         flex: 1 1 100%;

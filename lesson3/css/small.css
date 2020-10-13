@@ -28,7 +28,9 @@ main p {
 }
 
 header {
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: #eadada;
     max-width: 22em;
     margin: auto;
@@ -36,18 +38,28 @@ header {
 }
 
 header img {
-    max-width: 100px;
-    float: top;
+    max-width: 75px;
+    max-height: 75px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    text-align: center;
 }
 
 nav ul {
     list-style-type: none;
-    padding: 0;
     font-size: 20px;
 }
 
 nav ul li {
     padding: 1rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: blue;
 }
 
 main {
