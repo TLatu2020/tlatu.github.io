@@ -7,7 +7,7 @@ nav button {
 }
 
 nav {
-    background-color: rgba(50, 34, 222, 0.9);
+    background-color: rgba(29, 24, 92, 0.9);
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
     text-align: center;
@@ -41,12 +41,14 @@ nav ul.hide {
 }
 
 header {
+    background-color: #1d185c;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 header h1 {
+    color: #ffd30d;
     font-family: 'Roboto Slab', serif;
     font-size: 35px;
     margin-bottom: 0;
@@ -63,6 +65,36 @@ header img {
     margin-bottom: 15px;
     text-align: center;
     font-family: 'Montserret', sans-serif;
+    color: #ffd30d;
+}
+
+.hero-ph {
+    margin: 10px auto;
+    width: 100%;
+}
+
+.herodiv {
+    margin: 10px auto;
+    position: relative;
+}
+
+.weathersummary {
+    position: absolute;
+    padding: 0.6rem;
+    border: 1px solid black;
+    top: 30px;
+    left: 30px;
+    background: rgba(231, 217, 217, 0.7);
+}
+
+.weathersummary h3 {
+    margin-top: 0;
+    font-size: 25px;
+}
+
+.weathersummary p {
+    margin: 2px;
+    font-size: 18px;
 }
 
 .contentbox {
@@ -81,7 +113,7 @@ main h2 {
 }
 
 footer {
-    background-color: rgba(50, 34, 222, 0.9);
+    background-color: rgba(29, 24, 92, 0.9);
     color: white;
     text-align: center;
     font-size: 18px;
