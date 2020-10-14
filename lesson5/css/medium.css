@@ -10,4 +10,11 @@
     .header-motto {
         font-size: 18px;
     }
+    table {
+        border: 1px solid black;
+        margin: auto;
+    }
+    table tr img {
+        max-width: 125px;
+    }
 }
