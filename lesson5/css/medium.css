@@ -11,7 +11,11 @@
         font-size: 18px;
     }
     .fiveday {
+        display: block;
         margin: 20px;
+    }
+    .fiveday h3 {
+        text-align: center;
     }
     .forecast {
         display: grid;
@@ -25,5 +29,12 @@
     }
     .forecast img {
         max-width: 75px;
+    }
+    .carnival-article {
+        max-width: 40rem;
+    }
+    .carnival-article img {
+        float: right;
+        width: 400px;
     }
 }
