@@ -1,3 +1,7 @@
+body {
+    background-color: #e7d9d9;
+}
+
 nav button {
     margin: .2rem 2%;
     background-color: transparent;
@@ -74,7 +78,7 @@ header img {
 }
 
 .herodiv {
-    margin: 10px auto;
+    margin: 20px auto;
     position: relative;
 }
 
@@ -96,6 +100,12 @@ header img {
     margin: 2px;
     font-size: 18px;
 }
+
+.fiveday h3 {
+    text-align: center;
+}
+
+.carnival-article {}
 
 .contentbox {
     display: block;

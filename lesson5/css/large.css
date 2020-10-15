@@ -26,6 +26,16 @@
         border: none;
         padding: .6rem 1rem;
     }
+    .day-one,
+    .day-two,
+    .day-three,
+    .day-four,
+    .day-five {
+        margin: 0 10px 0 10px;
+    }
+    .forecast img {
+        max-width: 115px;
+    }
     main,
     footer {
         max-width: 45rem;

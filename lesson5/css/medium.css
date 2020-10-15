@@ -10,11 +10,20 @@
     .header-motto {
         font-size: 18px;
     }
-    table {
-        border: 1px solid black;
-        margin: auto;
+    .fiveday {
+        margin: 20px;
     }
-    table tr img {
-        max-width: 125px;
+    .forecast {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        justify-items: center;
+    }
+    .forecast p {
+        text-align: center;
+        font-size: 20px;
+        font-weight: 600;
+    }
+    .forecast img {
+        max-width: 75px;
     }
 }
