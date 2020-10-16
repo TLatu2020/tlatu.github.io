@@ -3,15 +3,14 @@ function toggleMenu() {
 }
 
 function showBanner() {
-    let day = new Date()
-    const banner = document.getElementsByClassName('pancake-banner');
+    let d = new Date()
+    const banner = document.getElementById('pancake-banner');
 
-    if (day.getDay() == 4) {
-        banner.style.display = 'block';
+    if (d.getDay() == 5) {
+        banner.style.display = "block";
     } else {
-        banner.style.display = 'none';
+        banner.style.display = "none";
     }
-
 }
 
 document.getElementById("currentyear").textContent = new Date().getFullYear();
