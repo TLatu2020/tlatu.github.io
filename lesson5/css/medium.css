@@ -1,4 +1,7 @@
 @media only screen and (min-width: 35rem) {
+    .pancake-banner {
+        font-size: 35px;
+    }
     main,
     footer {
         max-width: 35rem;
@@ -36,5 +39,14 @@
     .carnival-article img {
         float: right;
         width: 18rem;
+    }
+    .contact-info {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+        margin: 20px;
+    }
+    .contact-info picture {
+        display: block;
     }
 }
