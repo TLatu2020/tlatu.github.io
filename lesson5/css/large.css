@@ -36,6 +36,9 @@
     .forecast img {
         max-width: 115px;
     }
+    .carnival-article img {
+        width: 25rem;
+    }
     main,
     footer {
         max-width: 45rem;
