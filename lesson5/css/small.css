@@ -3,6 +3,7 @@ body {
 }
 
 #pancake-banner {
+    display: none;
     background-color: #ffd30d;
     font-size: 25px;
     text-align: center;
