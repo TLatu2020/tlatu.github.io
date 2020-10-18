@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 230 - Kakatisi Latu : Prestons Idaho Web Page</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Roboto+Slab:wght@100&family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <script src="js/script.js" defer></script>
+</head>
+
+<body onload="showBanner()">
+    <div id="pancake-banner">
+        <p>Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.</p>
+    </div>
+    <header>
+
+        <img src="images/weathersdownunder.png" alt="Weathers Downunder Logo">
+        <div class="header-motto">
+            <h1>Weathers Downunder</h1>
+            <div>The weathers downunder, but you don't have to be.</div>
+        </div>
+
+    </header>
+    <nav class="clearfix">
+        <button onclick="toggleMenu()">&#9776; Menu</button>
+        <ul id="primaryNav" class="hide">
+            <li><a href="#">Home</a></li>
+            <li class="active"><a href="#">Preston</a></li>
+            <li><a href="#">Soda Spring</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="#">Storm Center</a></li>
+            <li><a href="#">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Preston Idaho</h2>
+        <div class="herodiv">
+            <img class="hero-ph" src="images/prestons.png" alt="Church building and sky.">
+            <section class="weathersummary">
+                <h3>Weather Summary</h3>
+                <p>Currently: Sunny</p>
+                <p>High: 76&#8457;</p>
+                <p>Wind Chill: &#8457;</p>
+                <p>Humidity: 69%</p>
+                <p>Wind Speed: 5 mph</p>
+            </section>
+        </div>
+        <div class="fiveday">
+            <h3>5 Day Forcast</h3>
+            <div class="forecast">
+                <div class="day-one">
+                    <p>Sunday</p>
+                    <img src="images/rainy.png" alt="rainy cloud icon">
+                    <p>41&#8457;</p>
+                </div>
+                <div class="day-two">
+                    <p>Monday</p>
+                    <img src="images/rainy.png" alt="rainy cloud icon">
+                    <p>42&#8457;</p>
+                </div>
+                <div class="day-three">
+                    <p>Tuesday</p>
+                    <img src="images/cloudy.png" alt="sun and cloud icon">
+                    <p>45&#8457;</p>
+                </div>
+                <div class="day-four">
+                    <p>Wednesday</p>
+                    <img src="images/sunny.png" alt="sun icon">
+                    <p>47&#8457;</p>
+                </div>
+                <div class="day-five">
+                    <p>Thursday</p>
+                    <img src="images/sunny.png" alt="sun icon">
+                    <p>49&#8457;</p>
+                </div>
+            </div>
+
+        </div>
+        <div class="carnival-article">
+            <h3>Carnival</h3>
+            <img src="images/carnival.jpg" alt="Picture of father and daughter at a carnival">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere quam modi quod placeat sequi recusandae, optio commodi earum dicta autem harum magnam, facilis ipsum ducimus corporis quibusdam deleniti minus quaerat.</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia voluptas quibusdam in beatae inventore eos ut quo excepturi, mollitia dolor quod, dolore incidunt. Vel, vitae soluta dolorum veniam nesciunt quia? Sed repudiandae libero modi sapiente,
+                fugiat quae veritatis id illo, minus nesciunt doloremque harum animi! Perferendis veritatis possimus esse delectus obcaecati minus, temporibus nobis ex, quia dicta facere natus qui tempora, quo in consequatur debitis reprehenderit quos
+                deleniti ab dolores! Modi eius quod rem dolorem, consequatur eligendi sunt deserunt mollitia harum temporibus laudantium quo obcaecati excepturi? Pariatur saepe cumque, atque quos cum nemo esse repellendus ad! Dignissimos in nulla modi.
+                At, recusandae nemo blanditiis fuga ipsa tenetur. Quos aspernatur et, dolorum hic voluptas minus at aliquam iusto laborum id odit doloremque pariatur nulla quis itaque dolor nihil esse quam asperiores sapiente. Quam dolor explicabo temporibus
+                adipisci mollitia veritatis, dignissimos illum possimus. Neque corporis ab delectus illum voluptas vero architecto cumque est, dolor, autem eos sed corrupti dolore. Laboriosam sit error impedit, illum ipsa quos enim debitis mollitia et
+                explicabo ad ab cumque! Velit aut nisi praesentium officia ullam numquam molestiae iusto accusantium, eveniet dolorum asperiores soluta architecto a, assumenda voluptatem fuga nobis esse repellendus vero nostrum amet inventore? Laborum,
+                perspiciatis.
+            </p>
+        </div>
+        <div class="contact-info">
+            <picture>
+                <img src="images/idahomap.png" alt="idaho location map">
+            </picture>
+            <div>
+                <h3>Weathers Downunder</h3>
+                <p>&#128392; 30 N 1st E Preston, ID 83263</p>
+                <p>&#9743; 999.999.9999</p>
+                <p>&#9993; weathersdownunder@email.com</p>
+                <a href="https://facebook.com" target="_blank"><img src="images/facebook.png" alt="Facebook icon"></a>
+                <a href="https://instagram.com" target="_blank"><img src="images/instagram.png" alt="Instagram icon"></a>
+                <a href="https://pinterest.com" target="_blank"><img src="images/pinterest.png" alt="Pinterest icon"></a>
+                <a href="https://twitter.com" target="_blank"><img src="images/twitter.png" alt="Twitter icon"></a>
+
+
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; Weathers Downunder <span id="currentyear"></span> | Attributions | Kakatisi Latu</p>
+        <div>
+            <p id="currentdate"></p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

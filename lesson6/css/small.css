@@ -1,0 +1,165 @@
+body {
+    background-color: #e7d9d9;
+}
+
+#pancake-banner {
+    display: none;
+    background-color: #ffd30d;
+    font-size: 25px;
+    text-align: center;
+    padding: 1px;
+}
+
+nav button {
+    margin: .2rem 2%;
+    background-color: transparent;
+    border: none;
+    font-size: 1.6rem;
+    color: #fff;
+}
+
+nav {
+    background-color: rgba(29, 24, 92, 0.9);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li a {
+    display: block;
+    padding: .8rem 2%;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.8);
+    border-top: 1px solid #000;
+}
+
+nav ul li.active a {
+    background-color: rgba(255, 211, 13, 0.5);
+    color: black;
+}
+
+nav ul li a:hover {
+    background-color: #EB7070;
+}
+
+nav ul.hide {
+    display: none;
+}
+
+header {
+    background-color: #1d185c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header h1 {
+    color: #ffd30d;
+    font-family: 'Roboto Slab', serif;
+    font-size: 35px;
+    margin-bottom: 0;
+}
+
+header img {
+    width: 75px;
+    height: auto;
+    padding: .6rem 1rem;
+}
+
+.header-motto {
+    flex-direction: column;
+    margin-bottom: 15px;
+    text-align: center;
+    font-family: 'Montserret', sans-serif;
+    color: #ffd30d;
+}
+
+.hero-ph {
+    margin: 10px auto;
+    width: 100%;
+}
+
+.herodiv {
+    margin: 20px auto;
+    position: relative;
+}
+
+.weathersummary {
+    position: absolute;
+    padding: 0.6rem;
+    border: 1px solid black;
+    top: 30px;
+    left: 30px;
+    background: rgba(231, 217, 217, 0.7);
+}
+
+.weathersummary h3 {
+    margin-top: 0;
+    font-size: 25px;
+}
+
+.weathersummary p {
+    margin: 2px;
+    font-size: 18px;
+}
+
+.fiveday {
+    display: none;
+}
+
+.carnival-article {
+    max-width: 22rem;
+    margin: auto;
+    background: rgba(29, 24, 92, 0.80);
+    padding: 5px 40px;
+    color: white;
+}
+
+.carnival-article img {
+    max-width: 100%;
+}
+
+.carnival-article h3 {
+    font-size: 30px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+main h2 {
+    text-align: center;
+    font-family: 'Robo Slab', sans-serif;
+    font-size: 30px;
+}
+
+.contact-info {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact-info picture {
+    display: none;
+}
+
+footer {
+    background-color: rgba(29, 24, 92, 0.9);
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    padding: 0.5rem;
+}
+
+footer a {
+    color: yellow;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
