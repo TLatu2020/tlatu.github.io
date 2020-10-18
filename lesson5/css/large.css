@@ -7,7 +7,6 @@
     }
     header img {
         width: 100px;
-        height: 100px;
     }
     nav button {
         display: none;
@@ -16,11 +15,12 @@
         font-size: 0;
     }
     nav ul.hide {
-        display: block;
+        display: flex;
+        justify-content: center;
     }
     nav ul li {
-        display: inline-flex;
         font-size: 18px;
+        flex: 1 1 100%;
     }
     nav ul li a {
         border: none;
