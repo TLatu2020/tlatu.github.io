@@ -95,7 +95,8 @@ header img {
     border: 1px solid black;
     top: 30px;
     left: 30px;
-    background: rgba(231, 217, 217, 0.7);
+    background: rgba(29, 24, 92, 0.9);
+    color: white;
 }
 
 .weathersummary h3 {
