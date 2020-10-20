@@ -40,7 +40,11 @@
     <main>
         <h2>Preston Idaho</h2>
         <div class="herodiv">
-            <img class="hero-ph" src="images/prestons.png" alt="Church building and sky.">
+            <picture>
+                <source srcset="images/wdd230_image_franklin411.jpg" media="(min-width: 400px) and (max-width: 700px)">
+                <source srcset="images/wdd230_image_franklin560.jpg" media="(min-width: 701px) and (max-width: 1279px)">
+                <img class="hero-ph" src="images/wdd230_image_franklin720.jpg" alt="Padock with sunny weather">
+            </picture>
             <section class="weathersummary">
                 <h3>Weather Summary</h3>
                 <p>Currently: Sunny</p>

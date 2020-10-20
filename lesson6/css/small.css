@@ -82,7 +82,6 @@ header img {
 
 .hero-ph {
     margin: 10px auto;
-    width: 100%;
 }
 
 .herodiv {
@@ -114,8 +113,6 @@ header img {
 }
 
 .carnival-article {
-    max-width: 22rem;
-    margin: auto;
     background: rgba(29, 24, 92, 0.80);
     padding: 5px 40px;
     color: white;
@@ -129,6 +126,11 @@ header img {
     font-size: 30px;
     text-align: center;
     margin-top: 10px;
+}
+
+main {
+    max-width: 411px;
+    margin: auto;
 }
 
 main h2 {
