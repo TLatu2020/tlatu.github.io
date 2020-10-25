@@ -1,0 +1,49 @@
+@media only screen and (min-width: 700px) {
+    #pancake-banner {
+        font-size: 35px;
+    }
+    main,
+    footer {
+        max-width: 35rem;
+        margin: auto;
+    }
+    header h1 {
+        font-size: 40px;
+    }
+    .header-motto {
+        font-size: 18px;
+    }
+    .fiveday {
+        display: block;
+        margin: 20px;
+    }
+    .fiveday h3 {
+        text-align: center;
+    }
+    .forecast {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        justify-items: center;
+    }
+    .forecast p {
+        text-align: center;
+        font-size: 20px;
+        font-weight: 600;
+    }
+    .carnival-article {
+        max-width: 40rem;
+    }
+    .carnival-article img {
+        float: right;
+        width: 18rem;
+    }
+    .contact-info {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+        margin: 20px;
+    }
+    .contact-info picture {
+        display: block;
+    }
+}

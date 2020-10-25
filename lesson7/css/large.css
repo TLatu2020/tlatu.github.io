@@ -1,0 +1,40 @@
+@media only screen and (min-width: 1280px) {
+    header h1 {
+        font-size: 50px;
+    }
+    .header-motto {
+        font-size: 20px;
+    }
+    nav button {
+        display: none;
+    }
+    nav ul {
+        font-size: 0;
+    }
+    nav ul.hide {
+        display: flex;
+        justify-content: center;
+    }
+    nav ul li {
+        font-size: 18px;
+        flex: 1 1 100%;
+    }
+    nav ul li a {
+        border: none;
+        padding: .6rem 1rem;
+    }
+    .day-one,
+    .day-two,
+    .day-three,
+    .day-four,
+    .day-five {
+        margin: 0 10px 0 10px;
+    }
+    .carnival-article img {
+        width: 25rem;
+    }
+    main,
+    footer {
+        max-width: 45rem;
+    }
+}
