@@ -88,6 +88,15 @@ main {
     justify-items: center;
 }
 
+main img[data-src] {
+    filter: blur(0.2em);
+}
+
+main img {
+    filter: blur(0em);
+    transition: filter 0.5s;
+}
+
 footer {
     background-color: rgba(29, 24, 92, 0.9);
     color: white;
