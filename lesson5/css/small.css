@@ -1,3 +1,7 @@
+html {
+    font-size: 18px;
+}
+
 body {
     background-color: #e7d9d9;
 }
@@ -125,7 +129,7 @@ header img {
     max-width: 100%;
 }
 
-main h3 {
+.carnival-article h3 {
     font-size: 25px;
     text-align: center;
     margin-top: 10px;
