@@ -1,7 +1,4 @@
 @media only screen and (min-width: 35rem) {
-    #pancake-banner {
-        font-size: 35px;
-    }
     main,
     footer {
         max-width: 35rem;
