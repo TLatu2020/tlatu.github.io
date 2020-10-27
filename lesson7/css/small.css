@@ -82,74 +82,10 @@ header img {
     color: #ffd30d;
 }
 
-.hero-ph {
-    margin: 10px auto;
-}
-
-.herodiv {
-    margin: 20px auto;
-    position: relative;
-}
-
-.weathersummary {
-    position: absolute;
-    padding: 0.6rem;
-    border: 1px solid black;
-    top: 30px;
-    left: 30px;
-    background: rgba(29, 24, 92, 0.9);
-    color: white;
-}
-
-.weathersummary h3 {
-    margin-top: 0;
-    font-size: 25px;
-}
-
-.weathersummary p {
-    margin: 2px;
-    font-size: 18px;
-}
-
-.fiveday {
-    display: none;
-}
-
-.carnival-article {
-    background: rgba(29, 24, 92, 0.80);
-    padding: 5px 40px;
-    color: white;
-}
-
-.carnival-article img {
-    max-width: 100%;
-}
-
-.carnival-article h3 {
-    font-size: 30px;
-    text-align: center;
-    margin-top: 10px;
-}
-
 main {
-    max-width: 411px;
-    margin: auto;
-}
-
-main h2,
-h3 {
-    text-align: center;
-    font-family: 'Robo Slab', sans-serif;
-    font-size: 30px;
-}
-
-.contact-info {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.contact-info picture {
-    display: none;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
 }
 
 footer {
