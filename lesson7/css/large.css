@@ -27,6 +27,9 @@
         grid-template-columns: repeat(3, 1fr);
         gap: 10px;
     }
+    main picture:hover {
+        box-shadow: 5px 5px 20px;
+    }
     main,
     footer {
         max-width: 55rem;
