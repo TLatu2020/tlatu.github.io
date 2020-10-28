@@ -25,10 +25,12 @@
     }
     .container {
         grid-template-columns: repeat(3, 1fr);
-        gap: 10px;
     }
     .container figure:hover {
         box-shadow: 5px 5px 20px;
+    }
+    main figcaption {
+        display: block;
     }
     main,
     footer {
