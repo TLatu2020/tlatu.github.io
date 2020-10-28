@@ -10,7 +10,7 @@
     .header-motto {
         font-size: 18px;
     }
-    main {
+    .container {
         grid-template-columns: 1fr 1fr;
     }
 }

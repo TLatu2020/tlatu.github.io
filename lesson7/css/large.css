@@ -23,11 +23,11 @@
         border: none;
         padding: .6rem 1rem;
     }
-    main {
+    .container {
         grid-template-columns: repeat(3, 1fr);
         gap: 10px;
     }
-    main picture:hover {
+    .container figure:hover {
         box-shadow: 5px 5px 20px;
     }
     main,
