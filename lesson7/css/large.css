@@ -32,6 +32,7 @@
     main figcaption {
         display: block;
         font-family: 'Montserrat', serif;
+        margin: 10px;
     }
     main,
     footer {

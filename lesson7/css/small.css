@@ -87,6 +87,7 @@ header img {
     grid-template-columns: 1fr;
     justify-items: center;
     gap: 10px;
+    margin: 15px;
 }
 
 main h2 {
