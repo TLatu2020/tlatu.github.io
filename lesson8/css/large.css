@@ -1,0 +1,41 @@
+@media only screen and (min-width: 1280px) {
+    header h1 {
+        font-size: 50px;
+    }
+    .header-motto {
+        font-size: 20px;
+    }
+    nav button {
+        display: none;
+    }
+    nav ul {
+        font-size: 0;
+    }
+    nav ul.hide {
+        display: flex;
+        justify-content: center;
+    }
+    nav ul li {
+        font-size: 18px;
+        flex: 1 1 100%;
+    }
+    nav ul li a {
+        border: none;
+        padding: .6rem 1rem;
+    }
+    .container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .container figure:hover {
+        box-shadow: 5px 5px 20px;
+    }
+    main figcaption {
+        display: block;
+        font-family: 'Montserrat', serif;
+        margin: 10px;
+    }
+    main,
+    footer {
+        max-width: 55rem;
+    }
+}
