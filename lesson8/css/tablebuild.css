@@ -1,0 +1,38 @@
+table {
+    border-collapse: collapse;
+    max-width: 100%;
+    margin: auto;
+}
+
+thead th {
+    background-color: #7fb9c2;
+    font-size: 1.25rem;
+}
+
+tbody th,
+.standout {
+    background-color: #628ca6;
+    color: white;
+}
+
+tbody tr {
+    background-color: #e7ffed;
+}
+
+tbody tr:nth-of-type(even) {
+    background-color: #e7f0ed;
+}
+
+table tr,
+td,
+th {
+    text-align: center;
+    border: solid 1px black;
+    padding: 7px;
+}
+
+tfoot {
+    background-color: #7fb9c2;
+    font-size: .75rem;
+    font-weight: 600;
+}
