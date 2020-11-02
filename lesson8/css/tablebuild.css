@@ -2,11 +2,12 @@ table {
     border-collapse: collapse;
     max-width: 100%;
     margin: auto;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 thead th {
     background-color: #7fb9c2;
-    font-size: 1.25rem;
+    font-size: 1.5em;
 }
 
 tbody th,
