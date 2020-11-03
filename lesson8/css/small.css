@@ -82,36 +82,6 @@ header img {
     color: #ffd30d;
 }
 
-.container {
-    display: grid;
-    grid-template-columns: 1fr;
-    justify-items: center;
-    gap: 10px;
-    margin: 15px;
-}
-
-main h2 {
-    font-family: 'Roboto Slab', serif;
-    text-align: center;
-}
-
-main figcaption {
-    display: none;
-}
-
-main figure {
-    margin: 0;
-}
-
-main img[data-src] {
-    filter: blur(0.2em);
-}
-
-main img {
-    filter: blur(0em);
-    transition: filter 0.5s;
-}
-
 footer {
     background-color: rgba(29, 24, 92, 0.9);
     color: white;
