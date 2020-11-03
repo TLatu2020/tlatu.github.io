@@ -1,5 +1,6 @@
 table {
     border-collapse: collapse;
+    box-shadow: 5px 10px 8px #628ca6;
     max-width: 100%;
     margin: auto;
     font-family: 'Ubuntu', sans-serif;
@@ -28,7 +29,7 @@ table tr,
 td,
 th {
     text-align: center;
-    border: solid 1px black;
+    border: solid 1px #7fb9c2;
     padding: 7px;
 }
 
