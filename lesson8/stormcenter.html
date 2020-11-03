@@ -44,15 +44,15 @@
         <form action="#">
             <fieldset>
                 <legend>Personal Information</legend>
-                <label> Full Name*<input type="text" name="fname" pattern="\w {5,}" required></label>
-                <label> Email <input type="email" name="email"></label>
-                <label> Phone Number* <input type="tel" name="phone" placeholder="someone@email.com" required></label>
-                <label> Zip Code* <input type="number" name="zip" required></label>
+                <label class="top"> Full Name*<input type="text" name="fname" pattern="\w {5,}" required></label>
+                <label class="top"> Email <input type="email" name="email"></label>
+                <label class="top"> Phone Number* <input type="tel" name="phone" placeholder="someone@email.com" required></label>
+                <label class="top"> Zip Code* <input type="number" name="zip" required></label>
             </fieldset>
             <fieldset>
                 <legend>Storm Report</legend>
-                <label> Storm Date <input type="date" name="completeDate"></label>
-                <label> 
+                <label class="top"> Storm Date <input type="date" name="completeDate"></label>
+                <label class="top"> 
                     Storm Type <input list="stormList">
                     <datalist id="stormList">
                         <option value="Flash Flood">
@@ -62,8 +62,8 @@
                         <option value="Tornado">
                     </datalist>
                 </label>
-                <label>
-                    Storm Severity <input type="range" id="rating" value="1" min="1" max="10" list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                <label>Storm Severity
+                    <input type="range" id="rating" value="1" min="1" max="10" list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
                     <span id="ratingvalue">1</span>
                 </label>
                 <datalist id="tickmarks">
@@ -78,7 +78,7 @@
                     <option value="9">
                     <option value="10">
                 </datalist>
-                <label>
+                <label class="top">
                     Storm Region 
                     <select name="region">
                         <option disabled selected>Select Region</option>

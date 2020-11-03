@@ -82,6 +82,22 @@ header img {
     color: #ffd30d;
 }
 
+form fieldset {
+    margin: 1.5rem 0;
+    border-radius: 10px;
+    padding: .75rem 2%;
+}
+
+form label.top,
+form div {
+    display: block;
+}
+
+form label.top input,
+form label.top select {
+    display: block;
+}
+
 footer {
     background-color: rgba(29, 24, 92, 0.9);
     color: white;
