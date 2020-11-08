@@ -110,7 +110,8 @@ form div {
 }
 
 form label.top input,
-form label.top select {
+select,
+textarea {
     display: block;
     border: solid 1px #999;
     border-radius: 4px;
