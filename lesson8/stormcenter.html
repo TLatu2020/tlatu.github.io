@@ -47,7 +47,7 @@
                 <legend>Personal Information</legend>
                 <label class="top"> Full Name*<input type="text" name="fname" pattern="\w+{5,}" required></label>
                 <label class="top"> Email <input type="email" placeholder="someone@email.com" name="email"></label>
-                <label class="top"> Phone Number* <input type="tel" name="phone" required></label>
+                <label class="top"> Phone Number* <input type="tel" pattern="^[0-9]+$" name="phone" required></label>
                 <label class="top"> Zip Code* <input type="number" name="zip" required></label>
             </fieldset>
             <fieldset>
@@ -97,7 +97,7 @@
             </fieldset>
             <fieldset>
                 <legend>Additional Information</legend>
-                <textarea name="infor" cols="40" rows="5"></textarea>
+                <textarea name="info" cols="40" rows="5"></textarea>
             </fieldset>
             <input type="submit" value="Report Storm" class="submitBtn">
         </form>
