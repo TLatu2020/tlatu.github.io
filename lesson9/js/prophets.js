@@ -29,3 +29,11 @@ fetch(requestURL)
             document.querySelector('div.cards').appendChild(card);
         }
     });
+
+WebFont.load({
+    google: {
+        families: [
+            'Roboto Slab', 'Montserrat'
+        ]
+    }
+});
