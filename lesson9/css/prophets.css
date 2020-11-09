@@ -1,0 +1,26 @@
+.cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+}
+
+.cards section img {
+    box-shadow: 5px 10px 8px;
+}
+
+h1,
+footer {
+    text-align: center;
+}
+
+@media only screen and (min-width: 50rem) {
+    .cards {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media only screen and (min-width: 95rem) {
+    .cards {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
