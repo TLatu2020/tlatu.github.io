@@ -19,29 +19,27 @@ fetch(requestURL)
                 let year = document.createElement('p');
                 let population = document.createElement('p');
                 let rainfall = document.createElement('p');
-                let photo = document.createElement('img');
+                let image = document.createElement('img');
 
                 name.textContent = towns[i].name;
                 motto.textContent = towns[i].motto;
-                year.textContent = towns[i].yearFounded;
-                population.textContent = towns[i].currentPopulation;
-                rainfall.textContent = towns[i].averageRainfall;
-                photo.setAttribute('src', towns[i].photo);
-                photo.setAttribute('alt', 'picture of' + ' ' + towns[i].name);
+                year.textContent = 'Year Founded:' + ' ' + towns[i].yearFounded;
+                population.textContent = 'Population:' + ' ' + towns[i].currentPopulation;
+                rainfall.textContent = 'Average Rain Fall:' + ' ' + towns[i].averageRainfall;
+                image.setAttribute('src', towns[i].photo);
+                image.setAttribute('alt', 'picture of' + ' ' + towns[i].name);
 
                 info.appendChild(name);
                 info.appendChild(motto);
                 info.appendChild(year);
                 info.appendChild(population);
                 info.appendChild(rainfall);
-                pic.appendChild(photo);
+                pic.appendChild(image);
 
                 card.appendChild(info);
                 card.appendChild(pic);
 
-                document.querySelector(div.cards).appendChild(card);
+                document.querySelector('div.cards').appendChild(card);
             }
         }
-
-
-    })
+    });
