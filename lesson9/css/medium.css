@@ -10,7 +10,15 @@
     .header-motto {
         font-size: 18px;
     }
-    .container {
+    section {
+        display: grid;
         grid-template-columns: 1fr 1fr;
+    }
+    section:nth-child(even) img {
+        grid-column: 1;
+    }
+    section:nth-child(even) .data {
+        grid-column: 2;
+        grid-row: 1;
     }
 }

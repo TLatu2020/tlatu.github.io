@@ -23,19 +23,11 @@
         border: none;
         padding: .6rem 1rem;
     }
-    .container {
-        grid-template-columns: repeat(3, 1fr);
-    }
-    .container figure:hover {
-        box-shadow: 5px 5px 20px;
-    }
-    main figcaption {
+    section {
         display: block;
-        font-family: 'Montserrat', serif;
-        margin: 10px;
     }
-    form label.sbs {
-        padding: .4rem 0;
+    .cards {
+        grid-template-columns: repeat(3, 1fr);
     }
     main,
     footer {
