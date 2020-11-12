@@ -33,4 +33,8 @@
     .contact-info picture {
         display: block;
     }
+    .deer {
+        margin-left: 1.5rem;
+        margin-bottom: 1rem;
+    }
 }

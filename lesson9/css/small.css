@@ -82,6 +82,11 @@ header img {
     color: #ffd30d;
 }
 
+main {
+    max-width: 411px;
+    margin: auto;
+}
+
 main h2 {
     font-family: 'Roboto Slab', serif;
     text-align: center;
@@ -96,6 +101,12 @@ main p {
     display: grid;
     grid-template-columns: 1fr;
     justify-items: center;
+}
+
+.eventArticle {
+    padding: 5px 30px;
+    background-color: #1d185c;
+    color: white;
 }
 
 .contact-info {
@@ -123,8 +134,4 @@ footer a {
     content: "";
     display: table;
     clear: both;
-}
-
-.deer {
-    width: 400px;
 }
