@@ -21,4 +21,16 @@
         grid-column: 2;
         grid-row: 1;
     }
+    .deer {
+        float: right;
+    }
+    .contact-info {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+        margin: 20px;
+    }
+    .contact-info picture {
+        display: block;
+    }
 }
