@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/large.css">
     <script src="js/script.js" defer></script>
     <script src="js/towns.js" defer></script>
+    <script src="js/lazyload.js" defer></script>
 
 </head>
 
@@ -46,8 +47,8 @@
         <div class="eventArticle">
             <h2>Current Weather Story</h2>
             <picture>
-                <source srcset="images/Deer275(medium).jpg" media="(min-width: 700px) and (max-width: 1279px)">
-                <img class="deer" src="images/Deer.jpg" alt="Photo of a Deer">
+                <source data-srcset="images/Deer275(medium).jpg" media="(min-width: 700px) and (max-width: 1279px)">
+                <img class="deer" src="https://via.placeholder.com/350.png?text=Placeholder" data-src="images/Deer.jpg" alt="Photo of a Deer">
             </picture>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas eaque consectetur tenetur. Consequuntur fugiat laboriosam nemo odit neque vitae dolorum, perferendis quasi deserunt dolorem excepturi harum expedita quae laborum quisquam quis
                 atque nihil voluptatem maxime provident. Aperiam, asperiores. Veritatis nihil iusto culpa est obcaecati perspiciatis vel non consequatur molestias laboriosam, error quos! Culpa, aut, eveniet reiciendis dolore, beatae ratione sunt corrupti
@@ -62,7 +63,7 @@
         </div>
         <div class="contact-info">
             <picture>
-                <img src="images/idahomap.png" alt="idaho location map">
+                <img src="https://via.placeholder.com/256x256.png?text=Placeholder" data-src="images/idahomap.png" alt="idaho location map">
             </picture>
             <div>
                 <h3>Weathers Downunder</h3>

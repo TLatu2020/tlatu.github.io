@@ -97,10 +97,20 @@ main p {
     text-align: center;
 }
 
+main img[data-src] {
+    filter: blur(0.2em);
+}
+
+main img {
+    filter: blur(0em);
+    transition: filter 0.5s;
+}
+
 .cards {
     display: grid;
     grid-template-columns: 1fr;
     justify-items: center;
+    padding: 6px;
 }
 
 .eventArticle {
@@ -134,4 +144,9 @@ footer a {
     content: "";
     display: table;
     clear: both;
+}
+
+section img {
+    width: 400px;
+    height: 310px;
 }

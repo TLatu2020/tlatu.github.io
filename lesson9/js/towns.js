@@ -13,6 +13,7 @@ fetch(requestURL)
 
                 let card = document.createElement('section');
                 let info = document.createElement('div');
+                let pic = document.createElement('picture');
                 let name = document.createElement('h2');
                 let motto = document.createElement('p');
                 let year = document.createElement('p');
@@ -25,17 +26,19 @@ fetch(requestURL)
                 year.textContent = 'Year Founded:' + ' ' + towns[i].yearFounded;
                 population.textContent = 'Population:' + ' ' + towns[i].currentPopulation;
                 rainfall.textContent = 'Average Rain Fall:' + ' ' + towns[i].averageRainfall;
-                image.setAttribute('src', towns[i].photo);
+                image.setAttribute('src', "images/" + towns[i].photo);
                 image.setAttribute('alt', 'picture of' + ' ' + towns[i].name);
 
                 info.className = "data"
+                pic.appendChild(image);
                 info.appendChild(name);
                 info.appendChild(motto);
                 info.appendChild(year);
                 info.appendChild(population);
                 info.appendChild(rainfall);
                 card.appendChild(info);
-                card.appendChild(image);
+                card.appendChild(pic);
+
 
 
                 document.querySelector('div.cards').appendChild(card);
