@@ -29,7 +29,8 @@
     .cards {
         grid-template-columns: repeat(3, 1fr);
     }
-    main,
+    .eventArticle,
+    .contact-info,
     footer {
         max-width: 55rem;
     }
