@@ -5,6 +5,10 @@
     .header-motto {
         font-size: 18px;
     }
+    .cards {
+        max-width: 700px;
+        margin: auto;
+    }
     section {
         display: grid;
         grid-template-columns: 1fr 1fr;

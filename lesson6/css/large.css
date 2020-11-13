@@ -30,11 +30,14 @@
     .day-five {
         margin: 0 10px 0 10px;
     }
+    .carnival-article {
+        margin: auto;
+    }
     .carnival-article img {
         width: 25rem;
     }
     main,
     footer {
-        max-width: 40rem;
+        max-width: 55rem;
     }
 }

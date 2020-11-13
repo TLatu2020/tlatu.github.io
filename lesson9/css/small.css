@@ -113,6 +113,8 @@ main img {
     gap: 10px;
     justify-items: center;
     padding: 6px;
+    max-width: 350px;
+    margin: auto;
 }
 
 .cards section {
