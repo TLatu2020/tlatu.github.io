@@ -30,7 +30,8 @@ fetch(requestURL)
                 image.setAttribute('data-src', "images/" + towns[i].photo);
                 image.setAttribute('alt', 'picture of' + ' ' + towns[i].name);
 
-                info.className = "detail"
+                info.className = "detail";
+                motto.className = "motto";
                 pic.appendChild(image);
                 info.appendChild(name);
                 info.appendChild(motto);

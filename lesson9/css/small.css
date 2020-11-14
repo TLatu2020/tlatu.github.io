@@ -117,10 +117,20 @@ main img {
     margin: auto;
 }
 
+.cards h2 {
+    margin-bottom: 5px;
+}
+
 .cards section {
     border: solid 1px black;
     border-radius: 5px;
     background-color: #eb7573;
+}
+
+.motto {
+    font-size: 12px;
+    font-weight: 600;
+    margin-top: 5px;
 }
 
 .eventArticle {

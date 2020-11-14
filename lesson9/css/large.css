@@ -31,6 +31,12 @@
         max-width: 60rem;
         margin: auto;
     }
+    .cards h2 {
+        font-size: 2rem;
+    }
+    .motto {
+        font-size: 14px;
+    }
     .eventArticle,
     .contact-info,
     footer {
