@@ -127,6 +127,11 @@ main img {
     background-color: #eb7573;
 }
 
+.cards section img {
+    width: 350px;
+    height: 315px;
+}
+
 .motto {
     font-size: 12px;
     font-weight: 600;
@@ -164,9 +169,4 @@ footer a {
     content: "";
     display: table;
     clear: both;
-}
-
-section img {
-    width: 350px;
-    height: 310px;
 }

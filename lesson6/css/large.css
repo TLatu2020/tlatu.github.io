@@ -36,8 +36,7 @@
     .carnival-article img {
         width: 25rem;
     }
-    main,
-    footer {
+    main {
         max-width: 55rem;
     }
 }

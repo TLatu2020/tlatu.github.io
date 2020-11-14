@@ -38,8 +38,7 @@
         font-size: 14px;
     }
     .eventArticle,
-    .contact-info,
-    footer {
+    .contact-info {
         max-width: 55rem;
     }
 }

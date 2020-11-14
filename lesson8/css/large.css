@@ -37,8 +37,7 @@
     form label.sbs {
         padding: .4rem 0;
     }
-    main,
-    footer {
+    main {
         max-width: 55rem;
     }
 }

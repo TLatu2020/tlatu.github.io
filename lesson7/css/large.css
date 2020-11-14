@@ -34,8 +34,7 @@
         font-family: 'Montserrat', serif;
         margin: 10px;
     }
-    main,
-    footer {
+    main {
         max-width: 55rem;
     }
 }
