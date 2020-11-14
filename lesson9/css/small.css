@@ -128,6 +128,7 @@ main img {
 }
 
 .cards section img {
+    object-fit: cover;
     width: 350px;
     height: 315px;
 }

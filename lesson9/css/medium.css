@@ -27,7 +27,6 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         justify-items: center;
-        margin: 20px;
     }
     .contact-info picture {
         display: block;
@@ -39,6 +38,6 @@
     .eventArticle,
     .contact-info {
         max-width: 35rem;
-        margin: auto;
+        margin: 20px auto 20px auto;
     }
 }
