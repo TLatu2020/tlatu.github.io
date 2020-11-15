@@ -109,15 +109,17 @@ form div {
     font-size: .9rem;
 }
 
-form label.top input,
+form label,
+label.top input,
 select,
-textarea {
+textarea,
+div {
     display: block;
-    border: solid 1px #999;
     border-radius: 4px;
     padding: .67rem;
     width: 100%;
-    max-width: 20rem;
+    max-width: 18rem;
+    margin: auto;
 }
 
 form label.sbs {

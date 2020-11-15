@@ -1,15 +1,19 @@
-@media only screen and (min-width: 700px) {
-    main {
-        max-width: 35rem;
-        margin: auto;
+    @media only screen and (min-width: 700px) {
+        main {
+            max-width: 35rem;
+            margin: auto;
+        }
+        header h1 {
+            font-size: 40px;
+        }
+        .header-motto {
+            font-size: 18px;
+        }
+        form label,
+        label.top input,
+        select,
+        textarea,
+        div {
+            max-width: 23rem;
+        }
     }
-    header h1 {
-        font-size: 40px;
-    }
-    .header-motto {
-        font-size: 18px;
-    }
-    .container {
-        grid-template-columns: 1fr 1fr;
-    }
-}
