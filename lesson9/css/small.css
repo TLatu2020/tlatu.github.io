@@ -107,11 +107,14 @@ main img {
     transition: filter 0.5s;
 }
 
+.hero-pic img {
+    display: block;
+    margin: auto;
+}
+
 .cards {
     display: grid;
-    grid-template-columns: 1fr;
     gap: 10px;
-    justify-items: center;
     padding: 6px;
     max-width: 350px;
     margin: auto;

@@ -10,8 +10,8 @@
     <link rel="stylesheet" href="css/medium.css">
     <link rel="stylesheet" href="css/large.css">
     <script src="js/script.js" defer></script>
-    <script src="js/lazyload.js" defer></script>
     <script src="js/towns.js" defer></script>
+    <script src="js/lazyload.js" defer></script>
 
 
 </head>
@@ -44,11 +44,17 @@
         </ul>
     </nav>
     <main>
+        <div class="hero-pic">
+            <picture>
+                <source srcset="images/idaho-415(small).jpg" media="(max-width: 700px)">
+                <source srcset="images/idaho-710(medium).jpg" media="(max-width: 1280px)">
+                <img src="images/idaho.jpg" alt="Image of mountains in Idaho">
+            </picture>
+        </div>
         <div class="cards"></div>
         <div class="eventArticle">
             <h2>Current Weather Story</h2>
             <picture>
-                <source srcset="images/Deer275(medium).jpg" media="(min-width: 700px) and (max-width: 1279px)">
                 <img class="deer" src="https://via.placeholder.com/350.png?text=Placeholder" data-src="images/Deer.jpg" alt="Photo of a Deer">
             </picture>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas eaque consectetur tenetur. Consequuntur fugiat laboriosam nemo odit neque vitae dolorum, perferendis quasi deserunt dolorem excepturi harum expedita quae laborum quisquam quis
