@@ -45,9 +45,9 @@
         <form method="GET" action="thanks.html">
             <fieldset>
                 <legend>Personal Information</legend>
-                <label class="top"> Full Name*<input type="text" name="fname" pattern="\w+{5,}" required></label>
+                <label class="top"> Full Name*<input type="text" name="fname" pattern="[a-zA-Z\s]{5,}" required></label>
                 <label class="top"> Email <input type="email" placeholder="someone@email.com" name="email"></label>
-                <label class="top"> Phone Number* <input type="tel" pattern="^[0-9]+$" name="phone" required></label>
+                <label class="top"> Phone Number* <input type="tel" name="phone" required></label>
                 <label class="top"> Zip Code* <input type="number" name="zip" required></label>
             </fieldset>
             <fieldset>
