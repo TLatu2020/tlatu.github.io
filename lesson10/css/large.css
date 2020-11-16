@@ -1,0 +1,44 @@
+@media only screen and (min-width: 1280px) {
+    header h1 {
+        font-size: 50px;
+    }
+    .header-motto {
+        font-size: 20px;
+    }
+    nav button {
+        display: none;
+    }
+    nav ul {
+        font-size: 0;
+    }
+    nav ul.hide {
+        display: flex;
+        justify-content: center;
+    }
+    nav ul li {
+        font-size: 18px;
+        flex: 1 1 100%;
+    }
+    nav ul li a {
+        border: none;
+        padding: .6rem 1rem;
+    }
+    section {
+        display: block;
+    }
+    .cards {
+        grid-template-columns: repeat(3, 1fr);
+        max-width: 60rem;
+        margin: auto;
+    }
+    .cards h2 {
+        font-size: 2rem;
+    }
+    .motto {
+        font-size: 14px;
+    }
+    .eventArticle,
+    .contact-info {
+        max-width: 55rem;
+    }
+}
