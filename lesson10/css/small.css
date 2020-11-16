@@ -82,70 +82,65 @@ header img {
     color: #ffd30d;
 }
 
-.eventArticle,
-.contact-info {
+.hero-ph {
+    margin: 10px auto;
+    width: 100%;
+}
+
+.herodiv {
+    margin: 20px auto;
+    position: relative;
+}
+
+.weathersummary {
+    position: absolute;
+    padding: 0.6rem;
+    border: 1px solid black;
+    top: 30px;
+    left: 30px;
+    background: rgba(29, 24, 92, 0.9);
+    color: white;
+}
+
+.weathersummary h3 {
+    margin: 0 auto 5px;
+    font-size: 25px;
+}
+
+.weathersummary p {
+    margin: 2px;
+    font-size: 18px;
+}
+
+.fiveday {
+    display: none;
+}
+
+.carnival-article {
+    background: rgba(29, 24, 92, 0.80);
+    padding: 5px 40px;
+    color: white;
+}
+
+.carnival-article img {
+    max-width: 100%;
+}
+
+.carnival-article h3 {
+    font-size: 30px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+main {
     max-width: 411px;
     margin: auto;
 }
 
 main h2 {
-    font-family: 'Roboto Slab', serif;
     text-align: center;
-}
-
-main p {
-    font-family: 'Montserrat', sans-serif;
-    text-align: center;
-}
-
-main img[data-src] {
-    filter: blur(0.2em);
-}
-
-main img {
-    filter: blur(0em);
-    transition: filter 0.5s;
-}
-
-.hero-pic img {
-    display: block;
-    margin: auto;
-}
-
-.cards {
-    display: grid;
-    gap: 10px;
-    padding: 6px;
-    max-width: 350px;
-    margin: auto;
-}
-
-.cards h2 {
-    margin-bottom: 5px;
-}
-
-.cards section {
-    border: solid 1px black;
-    border-radius: 5px;
-    background-color: #eb7573;
-}
-
-.cards section img {
-    object-fit: cover;
-    width: 350px;
-    height: 315px;
-}
-
-.motto {
-    font-size: 12px;
-    font-weight: 600;
-    margin-top: 5px;
-}
-
-.eventArticle {
-    padding: 5px 30px;
-    background-color: #1d185c;
-    color: white;
+    font-family: 'Robo Slab', sans-serif;
+    font-size: 30px;
 }
 
 .contact-info {

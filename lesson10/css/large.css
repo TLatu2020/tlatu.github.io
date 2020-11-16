@@ -23,22 +23,20 @@
         border: none;
         padding: .6rem 1rem;
     }
-    section {
-        display: block;
+    .day-one,
+    .day-two,
+    .day-three,
+    .day-four,
+    .day-five {
+        margin: 0 10px 0 10px;
     }
-    .cards {
-        grid-template-columns: repeat(3, 1fr);
-        max-width: 60rem;
+    .carnival-article {
         margin: auto;
     }
-    .cards h2 {
-        font-size: 2rem;
+    .carnival-article img {
+        width: 25rem;
     }
-    .motto {
-        font-size: 14px;
-    }
-    .eventArticle,
-    .contact-info {
+    main {
         max-width: 55rem;
     }
 }
