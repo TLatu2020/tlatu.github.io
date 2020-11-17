@@ -13,7 +13,7 @@
         label.top input,
         select,
         textarea,
-        div {
+        form div {
             max-width: 23rem;
         }
     }

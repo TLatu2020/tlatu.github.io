@@ -113,7 +113,7 @@ form label,
 label.top input,
 select,
 textarea,
-div {
+form div {
     display: block;
     border-radius: 4px;
     padding: .67rem;
