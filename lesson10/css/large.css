@@ -23,13 +23,11 @@
         border: none;
         padding: .6rem 1rem;
     }
-    .day-one,
-    .day-two,
-    .day-three,
-    .day-four,
-    .day-five {
+    /*Forecast Section*/
+    .cards section {
         margin: 0 10px 0 10px;
     }
+    /*Carnival Article Section*/
     .carnival-article {
         margin: auto;
     }

@@ -16,12 +16,12 @@
     .fiveday h3 {
         text-align: center;
     }
-    .forecast {
+    .cards {
         display: grid;
         grid-template-columns: repeat(5, 1fr);
         justify-items: center;
     }
-    .forecast p {
+    .cards p {
         text-align: center;
         font-weight: 600;
     }
