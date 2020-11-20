@@ -61,7 +61,8 @@ fetch(forecastURL)
             day = day.slice(0, 3);
             weekDay.textContent = day;
 
-            image.setAttribute('src', 'https://openweathermap.org/img/wn/' + forecast.weather[0].icon + '.png');
+            image.setAttribute('src', "https://via.placeholder.com/100.png?text=Placeholder");
+            image.setAttribute('data-src', 'https://openweathermap.org/img/wn/' + forecast.weather[0].icon + '@2x.png');
             image.setAttribute('alt', forecast.weather[0].description);
 
             temp.textContent = forecast.main.temp.toFixed(1) + " °F";
@@ -77,4 +78,37 @@ fetch(forecastURL)
             document.querySelector('div.cards').appendChild(card);
             index++;
         })
-    });
+    })
+    .then(function(imagesToLoad = document.querySelectorAll('img[data-src]')) {
+            const loadImages = (image) => {
+                image.setAttribute('src', image.getAttribute('data-src'));
+                image.onload = () => {
+                    image.removeAttribute('data-src');
+                };
+            };
+
+            const imgOptions = {
+                threshold: 1
+            };
+
+            if ('IntersectionObserver' in window) {
+                const observer = new IntersectionObserver((items, observer) => {
+                    items.forEach((item) => {
+                        if (item.isIntersecting) {
+                            loadImages(item.target);
+                            observer.unobserve(item.target);
+                        }
+                    });
+                }, imgOptions);
+                imagesToLoad.forEach((img) => {
+                    observer.observe(img);
+                });
+            } else {
+                imagesToLoad.forEach((img) => {
+                    loadImages(img);
+                });
+            }
+        }
+
+
+    );

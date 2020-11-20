@@ -27,6 +27,9 @@
     .cards section {
         margin: 0 10px 0 10px;
     }
+    .days img {
+        width: 100px;
+    }
     /*Carnival Article Section*/
     .carnival-article {
         margin: auto;

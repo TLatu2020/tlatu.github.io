@@ -82,6 +82,15 @@ header img {
     color: #ffd30d;
 }
 
+main img[data-src] {
+    filter: blur(0.2em);
+}
+
+main img {
+    filter: blur(0em);
+    transition: filter 0.5s;
+}
+
 .hero-ph {
     margin: 10px auto;
     width: 100%;
