@@ -44,40 +44,40 @@ fetch(forecastURL)
         console.log(jsObject);
 
         const fiveDays = jsObject.list.filter(element => element.dt_txt.includes('18:00:00'));
-        let index = 0;
 
-        fiveDays.forEach(forecast => {
-            console.log(forecast);
+        for (i = 0; i < 1; i++) {
+            fiveDays.forEach(forecast => {
+                console.log(forecast);
 
-            let card = document.createElement('section');
-            let weekDay = document.createElement('p');
-            let image = document.createElement('img');
-            let temp = document.createElement('p');
-
-
-
-            var date = new Date(forecast.dt_txt);
-            var day = date.toString();
-            day = day.slice(0, 3);
-            weekDay.textContent = day;
-
-            image.setAttribute('src', "https://via.placeholder.com/100.png?text=Placeholder");
-            image.setAttribute('data-src', 'https://openweathermap.org/img/wn/' + forecast.weather[0].icon + '@2x.png');
-            image.setAttribute('alt', forecast.weather[0].description);
-
-            temp.textContent = forecast.main.temp.toFixed(1) + " °F";
-
-            card.className = "days";
-
-            card.appendChild(weekDay);
-            card.appendChild(image);
-            card.appendChild(temp);
+                let card = document.createElement('section');
+                let weekDay = document.createElement('p');
+                let image = document.createElement('img');
+                let temp = document.createElement('p');
 
 
 
-            document.querySelector('div.cards').appendChild(card);
-            index++;
-        })
+                var date = new Date(forecast.dt_txt);
+                var day = date.toString();
+                day = day.slice(0, 3);
+                weekDay.textContent = day;
+
+                image.setAttribute('src', "https://via.placeholder.com/100.png?text=Placeholder");
+                image.setAttribute('data-src', 'https://openweathermap.org/img/wn/' + forecast.weather[0].icon + '@2x.png');
+                image.setAttribute('alt', forecast.weather[0].description);
+
+                temp.textContent = forecast.main.temp.toFixed(1) + " °F";
+
+                card.className = "days";
+
+                card.appendChild(weekDay);
+                card.appendChild(image);
+                card.appendChild(temp);
+
+
+
+                document.querySelector('div.cards').appendChild(card);
+            })
+        }
     })
     .then(function(imagesToLoad = document.querySelectorAll('img[data-src]')) {
             const loadImages = (image) => {
