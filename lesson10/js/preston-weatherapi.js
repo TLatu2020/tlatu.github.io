@@ -63,7 +63,7 @@ fetch(forecastURL)
                 image.setAttribute('data-src', 'https://openweathermap.org/img/wn/' + forecast.weather[0].icon + '@2x.png');
                 image.setAttribute('alt', forecast.weather[0].description);
 
-                temp.textContent = forecast.main.temp.toFixed(1) + " °F";
+                temp.textContent = Math.round(forecast.main.temp) + " °F";
 
                 card.className = "days";
 
@@ -110,3 +110,11 @@ fetch(forecastURL)
 
 
     );
+
+const testWeather = "https://api.openweathermap.org/data/2.5/onecall?lat=42.0963&lon=-111.8766&exclude=minutely,hourly,alerts&appid=164f498c15ca0ca0e8f322a9fd449b46&units=imperial"
+
+fetch(testWeather)
+    .then((response) => response.json())
+    .then((jsObject) => {
+        console.log(jsObject)
+    });
