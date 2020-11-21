@@ -43,7 +43,7 @@ fetch(forecastURL)
     .then((jsObject) => {
         console.log(jsObject);
 
-        const fiveDays = jsObject.list.filter(element => element.dt_txt.includes('18:00:00'));
+        const fiveDays = jsObject.list.filter(item => item.dt_txt.includes('18:00:00'));
 
         for (i = 0; i < 1; i++) {
             fiveDays.forEach(forecast => {
@@ -53,8 +53,6 @@ fetch(forecastURL)
                 let weekDay = document.createElement('p');
                 let image = document.createElement('img');
                 let temp = document.createElement('p');
-
-
 
                 var date = new Date(forecast.dt_txt);
                 var day = date.toString();
