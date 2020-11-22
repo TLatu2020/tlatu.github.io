@@ -1,0 +1,176 @@
+html {
+    font-size: 18px;
+}
+
+body {
+    background-color: #e7d9d9;
+}
+
+#pancake-banner {
+    display: none;
+    background-color: #ffd30d;
+    font-size: 1.4rem;
+    text-align: center;
+    padding: 1px;
+}
+
+nav button {
+    margin: .2rem 2%;
+    background-color: transparent;
+    border: none;
+    font-size: 1.6rem;
+    color: #fff;
+}
+
+nav {
+    background-color: rgba(29, 24, 92, 0.9);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li a {
+    display: block;
+    padding: .8rem 2%;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.8);
+    border-top: 1px solid #000;
+}
+
+nav ul li.active a {
+    background-color: rgba(255, 211, 13, 0.5);
+    color: black;
+}
+
+nav ul li a:hover {
+    background-color: #EB7070;
+}
+
+nav ul.hide {
+    display: none;
+}
+
+header {
+    background-color: #1d185c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header h1 {
+    color: #ffd30d;
+    font-family: 'Roboto Slab', serif;
+    font-size: 35px;
+    margin-bottom: 0;
+}
+
+header img {
+    padding: .6rem 1rem;
+}
+
+.header-motto {
+    flex-direction: column;
+    margin-bottom: 15px;
+    text-align: center;
+    font-family: 'Montserret', sans-serif;
+    color: #ffd30d;
+}
+
+.eventArticle,
+.contact-info {
+    max-width: 411px;
+    margin: auto;
+}
+
+main h2 {
+    font-family: 'Roboto Slab', serif;
+    text-align: center;
+}
+
+main p {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+main img[data-src] {
+    filter: blur(0.2em);
+}
+
+main img {
+    filter: blur(0em);
+    transition: filter 0.5s;
+}
+
+.hero-pic img {
+    display: block;
+    margin: auto;
+}
+
+.cards {
+    display: grid;
+    gap: 10px;
+    padding: 6px;
+    max-width: 350px;
+    margin: auto;
+}
+
+.cards h2 {
+    margin-bottom: 5px;
+}
+
+.cards section {
+    border: solid 1px black;
+    border-radius: 5px;
+    background-color: #eb7573;
+}
+
+.cards section img {
+    object-fit: cover;
+    width: 350px;
+    height: 315px;
+}
+
+.motto {
+    font-size: 12px;
+    font-weight: 600;
+    margin-top: 5px;
+}
+
+.eventArticle {
+    padding: 5px 30px;
+    background-color: #1d185c;
+    color: white;
+}
+
+.contact-info {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact-info picture {
+    display: none;
+}
+
+footer {
+    background-color: rgba(29, 24, 92, 0.9);
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    padding: 0.5rem;
+}
+
+footer a {
+    color: yellow;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}

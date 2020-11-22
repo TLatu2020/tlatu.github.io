@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 230 - Kakatisi Latu : Gallery Web Page</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <script src="js/script.js" defer></script>
+    <script src="js/lazyload.js" defer></script>
+</head>
+
+<body onload="showBanner()">
+    <div id="pancake-banner">
+        <p>Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.</p>
+    </div>
+    <header>
+        <picture>
+            <source srcset="images/weathersdownunder-medium.png" media="(min-width: 400px) and (max-width: 1279px)">
+            <img src="images/weathersdownunder-large.png" alt="Weathers Downunder Logo">
+        </picture>
+
+        <div class="header-motto">
+            <h1>Weathers Downunder</h1>
+            <div>The weathers downunder, but you don't have to be.</div>
+        </div>
+
+    </header>
+    <nav class="clearfix">
+        <button onclick="toggleMenu()">&#9776; Menu</button>
+        <ul id="primaryNav" class="hide">
+            <li><a href="../lesson9/index.html">Home</a></li>
+            <li><a href="../lesson6/preston-6.html">Preston</a></li>
+            <li><a href="#">Soda Spring</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="../lesson8/stormcenter.html">Storm Center</a></li>
+            <li class="active"><a href="#">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Weather Gallery</h2>
+        <div class="container">
+            <figure>
+                <img src="https://dummyimage.com/300x400.png" data-src="images/cloudy.jpg" alt="Dummy Image">
+                <figcaption>Cloudy weather in the city</figcaption>
+            </figure>
+            <figure>
+                <img src="https://dummyimage.com/300x400.png" data-src="images/snowy.jpg" alt="Dummy Image">
+                <figcaption>Snowy weather on a tramline</figcaption>
+            </figure>
+            <figure>
+                <img src="https://dummyimage.com/300x400.png" data-src="images/storm.jpg" alt="Dummy Image">
+                <figcaption>Above view of a hurricane</figcaption>
+            </figure>
+            <figure>
+                <img src="https://dummyimage.com/300x400.png" data-src="images/sunny.jpg" alt="Dummy Image">
+                <figcaption>Sunny weather at a padock</figcaption>
+            </figure>
+            <figure>
+                <img src="https://dummyimage.com/300x400.png" data-src="images/cloudy2.jpg" alt="Dummy Image">
+                <figcaption>Cloudy weather in the evening</figcaption>
+            </figure>
+            <figure>
+                <img src="https://dummyimage.com/300x400.png" data-src="images/rainy2.jpg" alt="Dummy Image">
+                <figcaption>Rainy weather in the city</figcaption>
+            </figure>
+            <figure>
+                <img src="https://dummyimage.com/300x400.png" data-src="images/storm2.jpg" alt="Dummy Image">
+                <figcaption>Thunder storm at the beach</figcaption>
+            </figure>
+            <figure>
+                <img src="https://dummyimage.com/300x400.png" data-src="images/snowing.jpg" alt="Dummy Image">
+                <figcaption>Public seats with snow</figcaption>
+            </figure>
+            <figure>
+                <img src="https://dummyimage.com/300x400.png" data-src="images/sunny2.jpg" alt="Dummy Image">
+                <figcaption>Sunny day by the beach</figcaption>
+            </figure>
+        </div>
+
+    </main>
+    <footer>
+        <p>&copy; Weathers Downunder <span id="currentyear"></span> | Attributions | Kakatisi Latu</p>
+        <div>
+            <p id="currentdate"></p>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,174 @@
+html {
+    font-size: 18px;
+}
+
+body {
+    background-color: #e7d9d9;
+}
+
+#pancake-banner {
+    display: none;
+    background-color: #ffd30d;
+    font-size: 1.4rem;
+    text-align: center;
+    padding: 1px;
+}
+
+nav button {
+    margin: .2rem 2%;
+    background-color: transparent;
+    border: none;
+    font-size: 1.6rem;
+    color: #fff;
+}
+
+nav {
+    background-color: rgba(29, 24, 92, 0.9);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li a {
+    display: block;
+    padding: .8rem 2%;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.8);
+    border-top: 1px solid #000;
+}
+
+nav ul li.active a {
+    background-color: rgba(255, 211, 13, 0.5);
+    color: black;
+}
+
+nav ul li a:hover {
+    background-color: #EB7070;
+}
+
+nav ul.hide {
+    display: none;
+}
+
+header {
+    background-color: #1d185c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header h1 {
+    color: #ffd30d;
+    font-family: 'Roboto Slab', serif;
+    font-size: 35px;
+    margin-bottom: 0;
+}
+
+header img {
+    padding: .6rem 1rem;
+}
+
+.header-motto {
+    flex-direction: column;
+    margin-bottom: 15px;
+    text-align: center;
+    font-family: 'Montserret', sans-serif;
+    color: #ffd30d;
+}
+
+main h2 {
+    font-family: 'Roboto Slab', serif;
+    text-align: center;
+}
+
+main p {
+    font-family: 'Montserrat', sans-serif;
+}
+
+form fieldset {
+    margin: 1.8rem 0;
+    border-radius: 10px;
+    padding: .5rem 2%;
+}
+
+form legend {
+    margin: 0 1rem;
+    padding: 0 .5rem;
+}
+
+form label.top,
+form div {
+    display: block;
+    padding-top: .89rem;
+    font-size: .9rem;
+}
+
+form label,
+label.top input,
+select,
+textarea,
+form div {
+    display: block;
+    border-radius: 4px;
+    padding: .67rem;
+    width: 100%;
+    max-width: 18rem;
+    margin: auto;
+}
+
+form label.sbs {
+    display: block;
+    padding-bottom: .5rem;
+}
+
+form input.submitBtn {
+    border: none;
+    background-color: #1d185c;
+    color: white;
+    border-radius: .89rem;
+    padding: .67rem 1.34rem;
+    margin: 0 0 1.8rem 2%;
+    width: 96%;
+    max-width: 20rem;
+}
+
+form label.top input:required {
+    border-left: red solid 6px;
+}
+
+form label.top input:required:valid {
+    border-left: green solid 6px;
+}
+
+.thanks {
+    width: auto;
+    height: 20rem;
+}
+
+.thanks p {
+    text-align: center;
+}
+
+footer {
+    background-color: rgba(29, 24, 92, 0.9);
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    padding: 0.5rem;
+}
+
+footer a {
+    color: yellow;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
