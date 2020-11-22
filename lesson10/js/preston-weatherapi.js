@@ -8,7 +8,7 @@ fetch(apiURL)
         document.getElementById('currentCondition').textContent = jsObject.weather[0].main;
 
         //Current Temp
-        document.getElementById('currentTemp').textContent = jsObject.main.temp;
+        document.getElementById('currentTemp').textContent = jsObject.main.temp + " °F";
 
         //Highest Temp
         document.getElementById('high-temp').textContent = jsObject.main.temp_max;
@@ -28,7 +28,7 @@ fetch(apiURL)
         }
 
         //Humidity Level
-        document.getElementById('humidity').textContent = jsObject.main.humidity;
+        document.getElementById('humidity').textContent = jsObject.main.humidity + " %";
 
 
 
