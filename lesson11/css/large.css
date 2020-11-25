@@ -1,0 +1,81 @@
+@media only screen and (min-width: 1280px) {
+    /*General CSS*/
+    header h1 {
+        font-size: 50px;
+    }
+    .header-motto {
+        font-size: 20px;
+    }
+    nav button {
+        display: none;
+    }
+    nav ul {
+        font-size: 0;
+    }
+    nav ul.hide {
+        display: flex;
+        justify-content: center;
+    }
+    nav ul li {
+        font-size: 18px;
+        flex: 1 1 100%;
+    }
+    nav ul li a {
+        border: none;
+        padding: .6rem 1rem;
+    }
+    main {
+        max-width: 55rem;
+    }
+    /*Home Page CSS*/
+    section {
+        display: block;
+    }
+    .home-cards {
+        grid-template-columns: repeat(3, 1fr);
+        max-width: 60rem;
+        margin: auto;
+    }
+    .home-cards h2 {
+        font-size: 2rem;
+    }
+    .motto {
+        font-size: 14px;
+    }
+    /*.eventArticle,
+    .contact-info {
+        max-width: 55rem;
+    }*/
+    /*Preston, Soda Springs, Fish Haven CSS*/
+    .town-cards section {
+        margin: 0 10px 0 10px;
+    }
+    .days img {
+        width: 100px;
+    }
+    /*Carnival Article Section*/
+    .carnival-article {
+        margin: auto;
+    }
+    .carnival-article img {
+        width: 25rem;
+    }
+    /*Storm Center Page*/
+    .container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .container figure:hover {
+        box-shadow: 5px 5px 20px;
+    }
+    main figcaption {
+        display: block;
+        font-family: 'Montserrat', serif;
+        margin: 10px;
+    }
+    form label.sbs {
+        padding: .4rem 0;
+    }
+    .storm-body {
+        max-width: 40rem;
+    }
+}

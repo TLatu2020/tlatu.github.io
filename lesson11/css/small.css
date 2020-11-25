@@ -1,0 +1,316 @@
+/*General CSS*/
+
+html {
+    font-size: 18px;
+}
+
+body {
+    background-color: #e7d9d9;
+}
+
+nav button {
+    margin: .2rem 2%;
+    background-color: transparent;
+    border: none;
+    font-size: 1.6rem;
+    color: #fff;
+}
+
+nav {
+    background-color: rgba(29, 24, 92, 0.9);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li a {
+    display: block;
+    padding: .8rem 2%;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.8);
+    border-top: 1px solid #000;
+}
+
+nav ul li.active a {
+    background-color: rgba(255, 211, 13, 0.5);
+    color: black;
+}
+
+nav ul li a:hover {
+    background-color: #EB7070;
+}
+
+nav ul.hide {
+    display: none;
+}
+
+header {
+    background-color: #1d185c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header h1 {
+    color: #ffd30d;
+    font-family: 'Roboto Slab', serif;
+    font-size: 35px;
+    margin-bottom: 0;
+}
+
+header img {
+    padding: .6rem 1rem;
+}
+
+.header-motto {
+    flex-direction: column;
+    margin-bottom: 15px;
+    text-align: center;
+    font-family: 'Montserret', sans-serif;
+    color: #ffd30d;
+}
+
+main img[data-src] {
+    filter: blur(0.2em);
+}
+
+main img {
+    filter: blur(0em);
+    transition: filter 0.5s;
+}
+
+footer {
+    background-color: rgba(29, 24, 92, 0.9);
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    padding: 0.5rem;
+}
+
+footer a {
+    color: yellow;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/*Home Page CSS*/
+
+.hero-pic img {
+    display: block;
+    margin: auto;
+}
+
+.home-cards {
+    display: grid;
+    gap: 10px;
+    padding: 6px;
+    max-width: 350px;
+    margin: auto;
+}
+
+.home-cards h2 {
+    margin-bottom: 5px;
+}
+
+.home-cards section {
+    border: solid 1px black;
+    border-radius: 5px;
+    background-color: #eb7573;
+}
+
+.home-cards section img {
+    object-fit: cover;
+    width: 350px;
+    height: 315px;
+}
+
+.motto {
+    font-size: 12px;
+    font-weight: 600;
+    margin-top: 5px;
+}
+
+.eventArticle {
+    padding: 5px 30px;
+    background-color: #1d185c;
+    color: white;
+}
+
+.contact-info {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact-info picture {
+    display: none;
+}
+
+
+/*Preston, Soda Springs, Fish Haven Page CSS*/
+
+.hero-ph {
+    margin: 10px auto;
+    width: 100%;
+}
+
+.herodiv {
+    margin: 20px auto;
+    position: relative;
+}
+
+.weathersummary {
+    position: absolute;
+    padding: 0.6rem;
+    border: 1px solid black;
+    top: 30px;
+    left: 30px;
+    background: rgba(29, 24, 92, 0.9);
+    color: white;
+}
+
+.weathersummary h3 {
+    margin: 0 auto 5px;
+    font-size: 25px;
+}
+
+.weathersummary p {
+    margin: 2px;
+    font-size: 18px;
+}
+
+.fiveday {
+    display: none;
+}
+
+.carnival-article {
+    background: rgba(29, 24, 92, 0.80);
+    padding: 5px 40px;
+    color: white;
+}
+
+.carnival-article img {
+    max-width: 100%;
+}
+
+.carnival-article h3 {
+    font-size: 30px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+main {
+    max-width: 411px;
+    margin: auto;
+}
+
+main h2 {
+    text-align: center;
+    font-family: 'Robo Slab', sans-serif;
+    font-size: 30px;
+}
+
+.contact-info {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact-info picture {
+    display: none;
+}
+
+
+/*Storm Center Page CSS*/
+
+form fieldset {
+    margin: 1.8rem 0;
+    border-radius: 10px;
+    padding: .5rem 2%;
+}
+
+form legend {
+    margin: 0 1rem;
+    padding: 0 .5rem;
+}
+
+form label.top,
+form div {
+    display: block;
+    padding-top: .89rem;
+    font-size: .9rem;
+}
+
+form label,
+label.top input,
+select,
+textarea,
+form div {
+    display: block;
+    border-radius: 4px;
+    padding: .67rem;
+    width: 100%;
+    max-width: 18rem;
+    margin: auto;
+}
+
+form label.sbs {
+    display: block;
+    padding-bottom: .5rem;
+}
+
+form input.submitBtn {
+    border: none;
+    background-color: #1d185c;
+    color: white;
+    border-radius: .89rem;
+    padding: .67rem 1.34rem;
+    margin: 0 0 1.8rem 2%;
+    width: 96%;
+    max-width: 20rem;
+}
+
+form label.top input:required {
+    border-left: red solid 6px;
+}
+
+form label.top input:required:valid {
+    border-left: green solid 6px;
+}
+
+.thanks {
+    width: auto;
+    height: 20rem;
+}
+
+.thanks p {
+    text-align: center;
+}
+
+
+/*Gallery Page CSS*/
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 10px;
+    margin: 15px;
+}
+
+main figcaption {
+    display: none;
+}
+
+main figure {
+    margin: 0;
+}

@@ -1,0 +1,73 @@
+@media only screen and (min-width: 700px) {
+    /*General CSS*/
+    header h1 {
+        font-size: 40px;
+    }
+    .header-motto {
+        font-size: 18px;
+    }
+    .contact-info {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+        margin: 20px;
+    }
+    .contact-info picture {
+        display: block;
+    }
+    /*Home Page CSS*/
+    .home-cards {
+        max-width: 700px;
+        margin: auto;
+    }
+    section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    section:nth-child(even) img {
+        grid-column: 1;
+    }
+    section:nth-child(even) .detail {
+        grid-column: 2;
+        grid-row: 1;
+    }
+    .deer {
+        float: right;
+    }
+    /*Preston, Soda Springs, Fish Haven Page CSS*/
+    .fiveday {
+        display: block;
+        margin: 20px;
+    }
+    .fiveday h3 {
+        text-align: center;
+    }
+    .town-cards {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        justify-items: center;
+    }
+    .town-cards p {
+        text-align: center;
+        font-weight: 600;
+    }
+    .carnival-article {
+        max-width: 40rem;
+    }
+    .carnival-article img {
+        float: right;
+        width: 18rem;
+    }
+    /*Storm Center Page CSS*/
+    form label,
+    label.top input,
+    select,
+    textarea,
+    form div {
+        max-width: 23rem;
+    }
+    /*Gallery Page CSS*/
+    .container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
