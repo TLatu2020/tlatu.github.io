@@ -1,4 +1,23 @@
-const apiURL = "https://api.openweathermap.org/data/2.5/weather?lat=42.0380399&lon=-111.4048681&appid=164f498c15ca0ca0e8f322a9fd449b46&units=imperial";
+const cityClasses = document.body.classList;
+
+console.log(cityClasses);
+
+if (cityClasses.contains('preston')) {
+    var page = "Preston";
+    var locID = "id=5604473";
+} else if (cityClasses.contains('sodaSprings')) {
+    var page = "SodaSprings";
+    var locID = "id=5607916";
+} else if (cityClasses.contains("fishHaven")) {
+    var page = "FishHaven";
+    var locID = "lat=42.0380399&lon=-111.4048681";
+}
+
+const apiURL = "https://api.openweathermap.org/data/2.5/weather?" + locID + "&appid=164f498c15ca0ca0e8f322a9fd449b46&units=imperial";
+const forecastURL = "https://api.openweathermap.org/data/2.5/forecast?" + locID + "&appid=164f498c15ca0ca0e8f322a9fd449b46&units=imperial";
+
+console.log(apiURL);
+
 fetch(apiURL)
     .then((response) => response.json())
     .then((jsObject) => {
@@ -34,9 +53,6 @@ fetch(apiURL)
 
 
     });
-
-const forecastURL = "https://api.openweathermap.org/data/2.5/forecast?lat=42.0380399&lon=-111.4048681&appid=164f498c15ca0ca0e8f322a9fd449b46&units=imperial";
-
 
 fetch(forecastURL)
     .then((response) => response.json())
