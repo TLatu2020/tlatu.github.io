@@ -15,12 +15,16 @@
     .contact-info picture {
         display: block;
     }
+    main {
+        max-width: 35rem;
+        margin: auto;
+    }
     /*Home Page CSS*/
     .home-cards {
         max-width: 700px;
         margin: auto;
     }
-    section {
+    .home-cards section {
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
