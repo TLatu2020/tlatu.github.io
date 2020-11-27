@@ -43,7 +43,7 @@ fetch(requestURL)
 
 
 
-                document.querySelector('div.cards').appendChild(card);
+                document.querySelector('div.home-cards').appendChild(card);
             }
         }
     })
