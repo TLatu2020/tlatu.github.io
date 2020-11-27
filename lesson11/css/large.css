@@ -24,11 +24,11 @@
         border: none;
         padding: .6rem 1rem;
     }
-    main {
+    .sub-pages {
         max-width: 55rem;
     }
     /*Home Page CSS*/
-    section {
+    .home-cards section {
         display: block;
     }
     .home-cards {
@@ -41,6 +41,10 @@
     }
     .motto {
         font-size: 14px;
+    }
+    .eventArticle,
+    .contact-info {
+        max-width: 55rem;
     }
     /*.eventArticle,
     .contact-info {

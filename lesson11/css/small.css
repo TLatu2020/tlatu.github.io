@@ -141,6 +141,11 @@ footer a {
     margin-top: 5px;
 }
 
+.home-cards p {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
 .eventArticle {
     padding: 5px 30px;
     background-color: #1d185c;
@@ -217,7 +222,7 @@ footer a {
     margin-top: 10px;
 }
 
-main {
+.sub-pages {
     max-width: 411px;
     margin: auto;
 }
