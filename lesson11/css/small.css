@@ -159,6 +159,14 @@ footer a {
 
 /*Preston, Soda Springs, Fish Haven Page CSS*/
 
+#pancake-banner {
+    display: none;
+    background-color: #ffd30d;
+    font-size: 1.4rem;
+    text-align: center;
+    padding: 1px;
+}
+
 .hero-ph {
     margin: 10px auto;
     width: 100%;
