@@ -185,6 +185,7 @@ footer a {
 .hero-ph {
     margin: 10px auto;
     width: 100%;
+    box-shadow: 5px 5px 7px;
 }
 
 .herodiv {
@@ -237,7 +238,7 @@ footer a {
 
 .events {
     background-color: #ffd30d;
-    box-shadow: 5px 5px 6px;
+    box-shadow: 5px 5px 7px;
 }
 
 .events ul {
