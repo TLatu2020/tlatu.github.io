@@ -8,6 +8,13 @@ body {
     background-color: #e7d9d9;
 }
 
+h1,
+h2,
+h3 {
+    font-family: 'Roboto Slab', sans-serif;
+    text-align: center;
+}
+
 nav button {
     margin: .2rem 2%;
     background-color: transparent;
@@ -59,7 +66,6 @@ header {
 
 header h1 {
     color: #ffd30d;
-    font-family: 'Roboto Slab', serif;
     font-size: 35px;
     margin-bottom: 0;
 }
@@ -83,6 +89,10 @@ main img[data-src] {
 main img {
     filter: blur(0em);
     transition: filter 0.5s;
+}
+
+main p {
+    font-family: 'Montserrat', serif;
 }
 
 footer {
@@ -217,8 +227,6 @@ footer a {
 }
 
 .carnival-article h3 {
-    font-size: 30px;
-    text-align: center;
     margin-top: 10px;
 }
 
@@ -227,10 +235,28 @@ footer a {
     margin: auto;
 }
 
-main h2 {
+.events {
+    background-color: #ffd30d;
+    box-shadow: 5px 5px 6px;
+}
+
+.events ul {
+    list-style-type: none;
     text-align: center;
-    font-family: 'Robo Slab', sans-serif;
-    font-size: 30px;
+    padding: 0;
+}
+
+.events ul li {
+    padding-bottom: 10px;
+    font-family: 'Montserrat', serif;
+}
+
+main h2 {
+    font-size: 33px;
+}
+
+main h3 {
+    font-size: 25px;
 }
 
 .contact-info {

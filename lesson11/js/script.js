@@ -24,31 +24,54 @@ WebFont.load({
     }
 });
 
-const townsURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
+function events() {
+    const townsURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
 
-const cityClasses = document.body.classList;
+    const cityClasses = document.body.classList;
 
-console.log(cityClasses);
+    console.log(cityClasses);
 
-var town = "";
+    var town = "";
 
-if (cityClasses.contains('preston')) {
-    town = "Preston";
-} else if (cityClasses.contains('sodaSprings')) {
-    town = "Soda Springs";
-} else if (cityClasses.contains("fishHaven")) {
-    town = "Fish Haven";
+    if (cityClasses.contains('preston')) {
+        town = "Preston";
+    } else if (cityClasses.contains('sodaSprings')) {
+        town = "Soda Springs";
+    } else if (cityClasses.contains("fishHaven")) {
+        town = "Fish Haven";
+    }
+
+
+    fetch(townsURL)
+        .then(function(response) {
+            return response.json()
+        })
+        .then(function(jsObject) {
+            console.table(jsObject);
+            const towns = jsObject['towns'];
+
+            for (let i = 0; i < towns.length; i++) {
+                if (towns[i].name == town) {
+                    let events = document.createElement("section");
+                    let title = document.createElement("h3");
+                    let list = document.createElement("ul");
+
+
+                    title.textContent = "Upcoming Events";
+                    for (let e = 0; e < towns[i].events.length; e++) {
+                        let items = document.createElement("li");
+                        items.textContent = towns[i].events[e];
+                        list.appendChild(items);
+                    }
+
+                    events.appendChild(title);
+                    events.appendChild(list);
+
+
+                    document.querySelector('div.events').appendChild(events);
+                }
+
+            }
+
+        });
 }
-
-
-fetch(townsURL)
-    .then(response => response.json())
-    .then(jsObject => {
-        console.table(jsonObject);
-        const towns = jsonObject['towns'];
-
-        for (let i = 0; i < towns.length; i++) {
-
-        }
-
-    });
