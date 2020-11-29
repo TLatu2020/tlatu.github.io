@@ -51,6 +51,15 @@
         max-width: 55rem;
     }*/
     /*Preston, Soda Springs, Fish Haven CSS*/
+    .weathersummary {
+        position: absolute;
+        padding: 0.6rem;
+        border: 1px solid black;
+        top: 30px;
+        left: 30px;
+        background: rgba(29, 24, 92, 0.9);
+        color: white;
+    }
     .town-cards section {
         margin: 0 10px 0 10px;
     }

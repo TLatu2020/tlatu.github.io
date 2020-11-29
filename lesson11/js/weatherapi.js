@@ -40,10 +40,9 @@ fetch(apiURL)
 
         //Wind Chill
         let speed = Math.pow(windSpeed, 0.16);
-        let temp = jsObject.main.temp
-        let windChill = Math.round(35.75 * (0.6215 * temp) - (35.75 * speed) + (0.4275 * temp * speed));
+        let windChill = Math.round(35.75 + (0.6215 * temp) - (35.75 * speed) + (0.4275 * temp * speed));
 
-        if (temp <= 50 && windSpeed >= 3) {
+        if (temp <= 50 && windSpeed > 3) {
             document.getElementById('wind-chill').textContent = windChill;
         } else {
             document.getElementById('wind-chill').textContent = "N/A";
