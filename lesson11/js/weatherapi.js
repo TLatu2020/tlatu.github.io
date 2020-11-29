@@ -23,6 +23,9 @@ fetch(apiURL)
     .then((jsObject) => {
         console.log(jsObject);
 
+        let temp = jsObject.main.temp;
+        let windSpeed = jsObject.wind.speed;
+
         //Current Condition
         document.getElementById('currentCondition').textContent = jsObject.weather[0].main;
 
@@ -36,11 +39,11 @@ fetch(apiURL)
         document.getElementById('wind-speed').textContent = jsObject.wind.speed;
 
         //Wind Chill
-        let speed = Math.pow(jsObject.wind.speed, 0.16);
+        let speed = Math.pow(windSpeed, 0.16);
         let temp = jsObject.main.temp
         let windChill = Math.round(35.75 * (0.6215 * temp) - (35.75 * speed) + (0.4275 * temp * speed));
 
-        if (temp <= 50 && speed >= 3) {
+        if (temp <= 50 && windSpeed >= 3) {
             document.getElementById('wind-chill').textContent = windChill;
         } else {
             document.getElementById('wind-chill').textContent = "N/A";

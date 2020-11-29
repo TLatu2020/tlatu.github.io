@@ -4,25 +4,29 @@ fetch(apiURL)
     .then((jsObject) => {
         console.log(jsObject);
 
+        let temp = jsObject.main.temp;
+        let windSpeed = jsObject.wind.speed;
+        //let windSpeed = jsObject.wind.speed;
+
         //Current Condition
         document.getElementById('currentCondition').textContent = jsObject.weather[0].main;
 
         //Current Temp
-        document.getElementById('currentTemp').textContent = jsObject.main.temp + " °F";
+        document.getElementById('currentTemp').textContent = Math.round(temp) + " °F";
 
         //Highest Temp
-        document.getElementById('high-temp').textContent = jsObject.main.temp_max;
+        document.getElementById('high-temp').textContent = Math.round(jsObject.main.temp_max);
 
         //Wind Speed
-        document.getElementById('wind-speed').textContent = jsObject.wind.speed;
+        document.getElementById('wind-speed').textContent = windSpeed;
 
         //Wind Chill
-        let speed = Math.pow(jsObject.wind.speed, 0.16);
-        let temp = jsObject.main.temp
-        let windChill = Math.round(35.75 * (0.6215 * temp) - (35.75 * speed) + (0.4275 * temp * speed));
+        let speed = Math.pow(windSpeed, 0.16); //Math.pow(jsObject.wind.speed, 0.16);
 
-        if (temp <= 50 && speed >= 3) {
-            document.getElementById('wind-chill').textContent = windChill;
+        let windChill = Math.round(35.74 + (0.6215 * temp) - (35.75 * speed) + (0.4275 * temp * speed));
+
+        if (temp <= 50 && windSpeed > 3) {
+            document.getElementById('wind-chill').textContent = windChill + " °F";
         } else {
             document.getElementById('wind-chill').textContent = "N/A";
         }
