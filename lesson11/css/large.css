@@ -59,12 +59,17 @@
         left: 30px;
         background: rgba(29, 24, 92, 0.9);
         color: white;
+        text-align: left;
     }
     .town-cards section {
         margin: 0 10px 0 10px;
     }
     .days img {
         width: 100px;
+    }
+    .events {
+        max-width: 45rem;
+        margin: auto;
     }
     /*Carnival Article Section*/
     .carnival-article {

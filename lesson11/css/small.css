@@ -199,6 +199,7 @@ footer a {
     border: 1px solid black;
     background: rgba(29, 24, 92, 0.9);
     color: white;
+    text-align: center;
 }
 
 .weathersummary h3 {
