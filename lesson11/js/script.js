@@ -57,7 +57,7 @@ function events() {
                     let list = document.createElement("ul");
 
 
-                    title.textContent = "Upcoming Events";
+                    title.textContent = "Events";
                     for (let e = 0; e < towns[i].events.length; e++) {
                         let items = document.createElement("li");
                         items.textContent = towns[i].events[e];
