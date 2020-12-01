@@ -16,7 +16,7 @@
         display: block;
     }
     .sub-pages {
-        max-width: 35rem;
+        max-width: 40rem;
     }
     /*Home Page CSS*/
     .home-cards {
@@ -59,11 +59,9 @@
         text-align: center;
         font-weight: 600;
     }
-    .carnival-article {
-        max-width: 40rem;
-    }
     .carnival-article img {
         float: right;
+        padding-left: 10px;
     }
     /*Storm Center Page CSS*/
     form label,
