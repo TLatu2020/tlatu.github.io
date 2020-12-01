@@ -30,10 +30,10 @@ fetch(apiURL)
         document.getElementById('currentCondition').textContent = jsObject.weather[0].main;
 
         //Current Temp
-        document.getElementById('currentTemp').textContent = jsObject.main.temp + " °F";
+        document.getElementById('currentTemp').textContent = Math.round(jsObject.main.temp) + " °F";
 
         //Highest Temp
-        document.getElementById('high-temp').textContent = jsObject.main.temp_max + " °F";
+        document.getElementById('high-temp').textContent = Math.round(jsObject.main.temp_max) + " °F";
 
         //Wind Speed
         document.getElementById('wind-speed').textContent = jsObject.wind.speed;
