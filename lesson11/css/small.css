@@ -167,6 +167,18 @@ footer a,
     display: none;
 }
 
+.deer {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.eventArticle,
+.contact-info {
+    max-width: 411px;
+    margin: auto;
+}
+
 
 /*Preston, Soda Springs, Fish Haven Page CSS*/
 
@@ -310,7 +322,7 @@ form input.submitBtn {
     color: white;
     border-radius: .89rem;
     padding: .67rem 1.34rem;
-    margin: 0 0 1.8rem 27%;
+    margin: 0 0 1.8rem 6%;
     width: 96%;
     max-width: 20rem;
 }

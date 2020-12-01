@@ -71,6 +71,9 @@
     form div {
         max-width: 23rem;
     }
+    form input.submitBtn {
+        margin: 0 0 1.8rem 27%;
+    }
     /*Gallery Page CSS*/
     .container {
         grid-template-columns: 1fr 1fr;
