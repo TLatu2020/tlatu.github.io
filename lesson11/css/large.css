@@ -75,9 +75,6 @@
     .carnival-article {
         margin: auto;
     }
-    .carnival-article img {
-        width: 25rem;
-    }
     /*Storm Center Page*/
     .container {
         grid-template-columns: repeat(3, 1fr);
