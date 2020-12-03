@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Scoots - Home Page</title>
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="small.css">
-    <link rel="stylesheet" href="medium.css">
-    <link rel="stylesheet" href="large.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
     <script src="js/script.js" defer></script>
 </head>
 
@@ -29,11 +29,46 @@
         </ul>
     </nav>
     <main>
-        <div>
-            <h2>Rental Summary Information</h2>
-        </div>
         <div class="weather-cards"></div>
         <div class="forecast-cards"></div>
+        <div>
+            <h2>Rental Summary Information</h2>
+            <div class="slideshow-container">
+                <section class="slides fade">
+                    <p class="numText">1/6</p>
+                    <img src="images/Honda Metro (660px).jpg" alt="Honda Metro Scooter">
+                    <p class="text">Single seater scooter for as low as $20 to rent</p>
+                </section>
+                <section class="slides fade">
+                    <p class="numText">2/6</p>
+                    <img src="images/Honda Dio (550px).jpg" alt="Honda Dio Scooter">
+                    <p class="text">2 seater scooter for as low as $30 to rent</p>
+                </section>
+                <section class="slides fade">
+                    <p class="numText">3/6</p>
+                    <img src="images/Honda PCX150 (561px).jpg" alt="Honda PCX150 Scooter">
+                    <p class="text">Stronger 2 seater scooter for as low as $40 to rent</p>
+                </section>
+                <section class="slides fade">
+                    <p class="numText">4/6</p>
+                    <img src="images/Honda Pioneer (548px).jpg" alt="Honda Pioneer ATV">
+                    <p class="text">An all-terrain-vehicle that seats up to 4, for as low as $50 to rent</p>
+                </section>
+                <section class="slides fade">
+                    <p class="numText">5/6</p>
+                    <img src="images/Jeep Wrangler - 2 door (548px).jpg" alt="2 door Jeep Wrangler">
+                    <p class="text">A 2 door Jeep Wrangler that seats up to 4, for as low as $60 to rent</p>
+                </section>
+                <section class="slides fade">
+                    <p class="numText">6/6</p>
+                    <img src="images/Jeep Wrangler - 4 door (548px).jpg" alt="4 door Jeep Wrangler">
+                    <p class="text">4 door Jeep Wrangler that seats upto 5 for as low as $20 to rent</p>
+                </section>
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a></div>
+
+        </div>
+
     </main>
     <footer>
 
