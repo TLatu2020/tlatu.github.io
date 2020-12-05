@@ -106,4 +106,12 @@ fetch(forecastURL)
         }
 
 
-    );;
+    );
+
+const OneURL = "https://api.openweathermap.org/data/2.5/onecall?lat=20.5083&lon=-86.9458&units=imperial&exclude=minutely,hourly&appid=164f498c15ca0ca0e8f322a9fd449b46";
+
+fetch(OneURL)
+    .then((response) => response.json())
+    .then((jsObject) => {
+        console.log(jsObject);
+    });
