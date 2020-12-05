@@ -36,3 +36,5 @@ WebFont.load({
         ]
     }
 });
+
+//Rental Information

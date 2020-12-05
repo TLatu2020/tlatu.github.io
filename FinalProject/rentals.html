@@ -6,10 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Scoots - Rental Page</title>
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="small.css">
-    <link rel="stylesheet" href="medium.css">
-    <link rel="stylesheet" href="large.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
     <script src="js/script.js" defer></script>
+    <script src="js/rentals.js" defer></script>
 </head>
 
 <body>
@@ -26,10 +27,80 @@
         </ul>
     </nav>
     <main>
+        <h2>Type of Rentals</h2>
+        <div class="rental-cards">
+            <table>
+                <tr>
+                    <th colspan="2"></th>
+                    <th colspan="2">Reservation</th>
+                    <th colspan="2">Walk-in</th>
+                </tr>
+                <tr>
+                    <th>Rental Type</th>
+                    <th>Max. Persons</th>
+                    <th>Half Day (3hrs)</th>
+                    <th>Full Day</th>
+                    <th>Half Day (3 hrs)</th>
+                    <th>Full Day</th>
+                </tr>
+                <tr>
+                    <td id="Metro"></td>
+                    <td id="MaxOne"></td>
+                    <td id="RHOne"></td>
+                    <td id="RFOne"></td>
+                    <td id="WHOne"></td>
+                    <td id="WFOne"></td>
+                </tr>
+                <tr>
+
+                    <td id="Dio"></td>
+                    <td id="MaxTwo"></td>
+                    <td id="RHTwo"></td>
+                    <td id="RFTwo"></td>
+                    <td id="WHTwo"></td>
+                    <td id="WFTwo"></td>
+                </tr>
+                <tr>
+                    <td id="PCX150"></td>
+                    <td id="MaxThree"></td>
+                    <td id="RHThree"></td>
+                    <td id="RFThree"></td>
+                    <td id="WHThree"></td>
+                    <td id="WFThree"></td>
+                </tr>
+                <tr>
+                    <td id="Pioneer"></td>
+                    <td id="MaxFour"></td>
+                    <td id="RHFour"></td>
+                    <td id="RFFour"></td>
+                    <td id="WHFour"></td>
+                    <td id="WFFour"></td>
+                </tr>
+                <tr>
+                    <td id="WranglerTwo"></td>
+                    <td id="MaxFive"></td>
+                    <td id="RHFive"></td>
+                    <td id="RFFive"></td>
+                    <td id="WHFive"></td>
+                    <td id="WFFive"></td>
+                </tr>
+                <tr>
+                    <td id="WranglerFour"></td>
+                    <td id="MaxSix"></td>
+                    <td id="RHSix"></td>
+                    <td id="RFSix"></td>
+                    <td id="WHSix"></td>
+                    <td id="WFSix"></td>
+                </tr>
+            </table>
+        </div>
 
     </main>
     <footer>
-
+        <p>&copy; Scoots <span id="currentyear"></span> | Attributions | Kakatisi Latu</p>
+        <div>
+            <p id="currentdate"></p>
+        </div>
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
 </body>
