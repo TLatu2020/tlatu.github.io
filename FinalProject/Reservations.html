@@ -14,7 +14,10 @@
 
 <body>
     <header>
-
+        <picture>
+            <img src="images/~Scoots Logo.png" alt="Scoots Logo">
+        </picture>
+        <h1>Scoots</h1>
     </header>
     <nav>
         <ul>
@@ -26,6 +29,42 @@
         </ul>
     </nav>
     <main>
+        <h2>Reservation</h2>
+        <form method="GET" action="confirmation.html">
+            <fieldset>
+                <legend>Vehicle Rental</legend>
+                <label>Pick up Date:
+                    <input type="date" name="pick up">
+                </label>
+                <label>Drop off Date
+                    <input type="date" name="drop off">
+                </label>
+                <label>Vehicle
+                    <select name="" id="vehicle">
+                        <option disabled selected>Please select</option>
+                        <option value="scooter">Scooter</option>
+                        <option value="ATV">ATV</option>
+                        <option value="wrangler">Jeep Wrangler</option>
+                    </select>
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label>Name
+                    <input type="text" name="name" pattern="" required>
+                </label>
+                <label>Email
+                    <input type="email" name="email">
+                </label>
+                <label>Phone Number
+                    <input type="phone">
+                </label>
+                <label>Country
+                    <input type="text" name="country">
+                </label>
+            </fieldset>
+        </form>
 
     </main>
     <footer>
