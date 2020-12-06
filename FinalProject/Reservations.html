@@ -39,8 +39,8 @@
                 <label>Drop off Date
                     <input type="date" name="drop off">
                 </label>
-                <label>Vehicle
-                    <select name="" id="vehicle">
+                <label>Vehicle Type
+                    <select name="vehicle" id="">
                         <option disabled selected>Please select</option>
                         <option value="scooter">Scooter</option>
                         <option value="ATV">ATV</option>
@@ -48,6 +48,32 @@
                     </select>
                 </label>
             </fieldset>
+
+            <!-- SHOW AND HIDE MENU OPTIONS THROUGH JAVASCRIPT -->
+
+            <label>Scooters
+                <select name="scooters" id="">
+                    <option disabled selected>Please Select</option>
+                    <option value="metro">Honda Metropolitan (49cc) - 1 person</option>
+                    <option value="dio">Honda Dio (110cc) - 2 person</option>
+                    <option value="pcx">Honda PCX150 (149cc) - 2 person</option>
+                </select>
+            </label>
+
+            <label>ATV
+                <select name="atv" id="">
+                    <option disabled selected>Please Select</option>
+                    <option value="pioneer">Honda Pioneer 10000 - 4 person</option>
+                </select>
+            </label>
+
+            <label>Jeep Wrangler
+                <select name="wrangler" id="">
+                    <option disabled selected>Please Select</option>
+                    <option value="twoDoor">Jeep Wrangler 2 Door - 4 person</option>
+                    <option value="fourDoor">Jeep Wrangler 4 Door - 5 person</option>
+                </select>
+            </label>
 
             <fieldset>
                 <legend>Personal Information</legend>
