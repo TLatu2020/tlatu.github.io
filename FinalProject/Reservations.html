@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Scoots - Reservation Page</title>
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="small.css">
-    <link rel="stylesheet" href="medium.css">
-    <link rel="stylesheet" href="large.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
     <script src="js/script.js" defer></script>
 </head>
 
@@ -30,6 +30,21 @@
     </nav>
     <main>
         <h2>Reservation</h2>
+        <div>
+            <h3>Rental Information Agreement</h3>
+            <ul>
+                <li>a $50 security deposit is required to confirm reservations.</li>
+                <li>A valid drivers license is required in hand at time of rental.</li>
+                <li>No one under 12 years of age are allowed to ride on the scooters.</li>
+                <li>Fuel charge not included.</li>
+                <li>Unlimited mileage.</li>
+                <li>Liability insurance is free of charge.</li>
+                <li>Reservations rate requires 24 hour prior notification.</li>
+                <li>Free delivery to Cozumel hotel, Airbnb, or private residence for 2+ day rentals.</li>
+                <li>Payment via Google Pay, cash, credit card, debit card, or PayPal.</li>
+                <li>Rentals may be returned to either location.</li>
+            </ul>
+        </div>
         <form method="GET" action="confirmation.html">
             <fieldset>
                 <legend>Vehicle Rental</legend>
@@ -42,39 +57,22 @@
                 <label>Vehicle Type
                     <select name="vehicle" id="">
                         <option disabled selected>Please select</option>
-                        <option value="scooter">Scooter</option>
-                        <option value="ATV">ATV</option>
-                        <option value="wrangler">Jeep Wrangler</option>
+                        <option value="metro">Honda Metropolitan (49cc) - 1 person</option>
+                        <option value="dio">Honda Dio (110cc) - 2 person</option>
+                        <option value="pcx">Honda PCX150 (149cc) - 2 person</option>
+                        <option value="pioneer">ATV Honda Pioneer 10000 - 4 person</option>
+                        <option value="twoDoor">Jeep Wrangler 2 Door - 4 person</option>
+                        <option value="fourDoor">Jeep Wrangler 4 Door - 5 person</option>
                     </select>
                 </label>
+                <label>Cruise Line (if applicable)
+                    <input type="text" name="cruiseLine">
+                </label>
+                <div>Special Accomodations or Delivery Requests</div>
+                <label>Details:
+                    <textarea name="requests" id="requests" cols="30" rows="10"></textarea>
+                </label>
             </fieldset>
-
-            <!-- SHOW AND HIDE MENU OPTIONS THROUGH JAVASCRIPT -->
-
-            <label>Scooters
-                <select name="scooters" id="">
-                    <option disabled selected>Please Select</option>
-                    <option value="metro">Honda Metropolitan (49cc) - 1 person</option>
-                    <option value="dio">Honda Dio (110cc) - 2 person</option>
-                    <option value="pcx">Honda PCX150 (149cc) - 2 person</option>
-                </select>
-            </label>
-
-            <label>ATV
-                <select name="atv" id="">
-                    <option disabled selected>Please Select</option>
-                    <option value="pioneer">Honda Pioneer 10000 - 4 person</option>
-                </select>
-            </label>
-
-            <label>Jeep Wrangler
-                <select name="wrangler" id="">
-                    <option disabled selected>Please Select</option>
-                    <option value="twoDoor">Jeep Wrangler 2 Door - 4 person</option>
-                    <option value="fourDoor">Jeep Wrangler 4 Door - 5 person</option>
-                </select>
-            </label>
-
             <fieldset>
                 <legend>Personal Information</legend>
                 <label>Name
