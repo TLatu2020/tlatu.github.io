@@ -1,4 +1,4 @@
-const weatherURL = "https://api.openweathermap.org/data/2.5/weather?id=3530103&units=imperial&appid=164f498c15ca0ca0e8f322a9fd449b46";
+/*const weatherURL = "https://api.openweathermap.org/data/2.5/weather?id=3530103&units=imperial&appid=164f498c15ca0ca0e8f322a9fd449b46";
 
 fetch(weatherURL)
     .then((response) => response.json())
@@ -34,7 +34,7 @@ fetch(forecastURL)
     .then((response) => response.json())
     .then((jsObject) => {
         console.log(jsObject);
-
+    });
         const fiveDays = jsObject.list.filter(item => item.dt_txt.includes('18:00:00'));
 
         const threeDays = fiveDays.slice(0, 3);
@@ -106,7 +106,7 @@ fetch(forecastURL)
         }
 
 
-    );
+    );*/
 
 const OneURL = "https://api.openweathermap.org/data/2.5/onecall?lat=20.5083&lon=-86.9458&units=imperial&exclude=minutely,hourly&appid=164f498c15ca0ca0e8f322a9fd449b46";
 
@@ -114,4 +114,68 @@ fetch(OneURL)
     .then((response) => response.json())
     .then((jsObject) => {
         console.log(jsObject);
+
+        let card = document.createElement('section');
+        let title = document.createElement('h3');
+        let temp = document.createElement('p');
+        let condition = document.createElement('p');
+        let humidity = document.createElement('p');
+        let image = document.createElement('img');
+
+        title.textContent = "Current Weather";
+        temp.textContent = jsObject.current.temp + " °F";
+        condition.textContent = "Condition: " + jsObject.current.weather[0].main;
+        humidity.textContent = "Humidity: " + jsObject.current.humidity + " %";
+        image.setAttribute('src', 'https://openweathermap.org/img/wn/' + jsObject.current.weather[0].icon + '@2x.png')
+        image.setAttribute('alt', jsObject.current.weather[0].description);
+
+        card.appendChild(title);
+        card.appendChild(temp);
+        card.appendChild(condition);
+        card.appendChild(humidity);
+        card.appendChild(image);
+
+        document.querySelector('div.weather-card').appendChild(card);
+
+        //Forecast
+
+        const fiveDays = jsObject.daily; //.filter(item => item.temp.includes('day'));
+
+        console.log(fiveDays);
+
+        const threeDays = fiveDays.slice(0, 3);
+
+        console.log(threeDays);
+
+        for (i = 0; i < 1; i++) {
+            threeDays.forEach(forecast => {
+
+                let fcard = document.createElement('section');
+                let weekDay = document.createElement('p');
+                let fimage = document.createElement('img');
+                let ftemp = document.createElement('p');
+
+                var date = new Date(forecast.dt);
+                var day = date.toString();
+                day = day.slice(0, 3);
+                weekDay.textContent = day;
+
+
+                fimage.setAttribute('src', "https://via.placeholder.com/100.png?text=Placeholder");
+                fimage.setAttribute('data-src', 'https://openweathermap.org/img/wn/' + forecast.weather[0].icon + '@2x.png');
+                fimage.setAttribute('alt', forecast.weather[0].description);
+
+                ftemp.textContent = Math.round(forecast.temp.day) + " °F";
+
+                fcard.className = "days";
+
+                fcard.appendChild(weekDay);
+                fcard.appendChild(image);
+                fcard.appendChild(ftemp);
+
+
+
+                document.querySelector('div.forecast-card').appendChild(fcard);
+            })
+        }
     });

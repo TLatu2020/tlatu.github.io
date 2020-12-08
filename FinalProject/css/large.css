@@ -1,21 +1,3 @@
 @media only screen and (min-width: 1280px) {
     /* General */
-    nav button {
-        display: none;
-    }
-    nav ul {
-        font-size: 0;
-    }
-    nav ul.hide {
-        display: flex;
-        justify-content: center;
-    }
-    nav ul li {
-        font-size: 18px;
-        flex: 1 1 100%;
-    }
-    nav ul li a {
-        border: none;
-        padding: .6rem 1rem;
-    }
 }

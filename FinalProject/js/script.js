@@ -14,4 +14,8 @@ WebFont.load({
     }
 });
 
+function toggleMenu() {
+    document.getElementById('primaryNav').classList.toggle('hide');
+}
+
 //Rental Information

@@ -6,7 +6,7 @@ li {
 }
 
 header picture img {
-    max-width: 30rem;
+    max-width: 20rem;
 }
 
 nav button {
@@ -58,7 +58,7 @@ nav ul.hide {
 }
 
 
-/* Index Page*/
+/* HOME PAGE */
 
 
 /*Slideshow*/
@@ -73,6 +73,7 @@ nav ul.hide {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    width: 45%;
 }
 
 .slides {
@@ -136,7 +137,21 @@ nav ul.hide {
 }
 
 
-/* Rentals */
+/* Weather Summary */
+
+.weather-card section {
+    text-align: center;
+}
+
+
+/* 3-day Summary */
+
+.forecast-card section img {
+    display: none;
+}
+
+
+/* RENTALS */
 
 table,
 th,
@@ -147,7 +162,7 @@ td {
 }
 
 
-/* Footer */
+/* FOOTER */
 
 footer {
     text-align: center;

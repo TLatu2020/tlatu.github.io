@@ -63,6 +63,8 @@ fetch(forecastURL)
 
         const fiveDays = jsObject.list.filter(item => item.dt_txt.includes('18:00:00'));
 
+        console.log()
+
         for (i = 0; i < 1; i++) {
             fiveDays.forEach(forecast => {
                 console.log(forecast);
@@ -76,6 +78,8 @@ fetch(forecastURL)
                 var day = date.toString();
                 day = day.slice(0, 3);
                 weekDay.textContent = day;
+
+
 
                 image.setAttribute('src', "https://via.placeholder.com/100.png?text=Placeholder");
                 image.setAttribute('data-src', 'https://openweathermap.org/img/wn/' + forecast.weather[0].icon + '@2x.png');
