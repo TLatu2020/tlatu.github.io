@@ -14,7 +14,10 @@
 
 <body>
     <header>
-
+        <picture>
+            <img src="images/~Scoots Logo.png" alt="Scoots Logo">
+        </picture>
+        <h1>Scoots</h1>
     </header>
     <nav>
         <ul>
@@ -26,7 +29,37 @@
         </ul>
     </nav>
     <main>
+        <h2>Contact Us</h2>
 
+        <h3>Leave a comment</h3>
+        <form action="comment-confirmation.html" method="GET">
+            <legend>Comment</legend>
+            <label>Name:
+                <input type="text" name="name" pattern="[a-zA-Z\s]{5,}">
+            </label>
+            <label>Email:
+                <input type="email" name="email">
+            </label>
+            <label>Comment:
+                <textarea name="comment" cols="30" rows="10"></textarea>
+            </label>
+        </form>
+
+        <h3>Call Us</h3>
+        <p>999.999.9999</p>
+
+        <h3>Email Us</h3>
+        <p>myemail@email.com</p>
+
+        <h2>Location</h2>
+        <h3>International Airport</h3>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3736.8996992979273!2d-86.93259211735383!3d20.510337565148134!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4e5846a9c56ac7%3A0x8ab8d136e4473589!2sCozumel%20International%20Airport!5e0!3m2!1sen!2sau!4v1607412618310!5m2!1sen!2sau"
+            width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        <p>Av. Nte. 70 Emiliano Zapata San Miguel de Cozumel, Q.R. Mexico</p>
+        <h3>Puerta Maya Terminal</h3>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6285.925560845502!2d-86.97511329081854!3d20.480232699740856!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xec697a2a774f7a00!2sPuerta%20Maya%20Cruise%20Ship%20Terminal!5e0!3m2!1sen!2sau!4v1607413274202!5m2!1sen!2sau"
+            width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        <p>77600 Quinrana Roo, Cozumel, Mexico</p>
     </main>
     <footer>
         <p>&copy; Scoots <span id="currentyear"></span> | Attributions | Kakatisi Latu</p>
