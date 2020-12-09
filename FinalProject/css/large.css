@@ -1,3 +1,35 @@
-@media only screen and (min-width: 1280px) {
+@media only screen and (min-width: 90rem) {
     /* General */
+    /* HOME PAGE */
+    .weather-card {
+        float: left;
+        width: 50%;
+    }
+    .forecast-card {
+        height: 265.43px;
+    }
+    .slideshow-container {
+        max-width: 900px;
+    }
+    .slideshow-container {
+        display: none;
+    }
+    .rental-info {
+        display: block;
+    }
+    .scooters {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-items: center;
+    }
+    .ATV {
+        display: grid;
+        justify-items: center;
+    }
+    .wranglers {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+    }
+    /* FOOTER */
 }

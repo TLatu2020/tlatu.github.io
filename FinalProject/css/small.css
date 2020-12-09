@@ -1,7 +1,13 @@
 /* General */
 
+h1,
+h2 {
+    text-align: center;
+}
+
 main p,
-li {
+li,
+.CTA {
     font-family: 'Montserrat', serif;
 }
 
@@ -63,6 +69,10 @@ nav ul.hide {
 
 /*Slideshow*/
 
+.rental-info {
+    display: none;
+}
+
 .slideshow-container {
     max-width: 700px;
     position: relative;
@@ -73,7 +83,7 @@ nav ul.hide {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 45%;
+    width: 55%;
 }
 
 .slides {
@@ -92,13 +102,13 @@ nav ul.hide {
     font-weight: bold;
     font-size: 18px;
     transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
+    border-radius: 3px 0 0 3px;
     user-select: none;
 }
 
 .next {
     right: 0;
-    border-radius: 3px 0 0 3px;
+    border-radius: 0 3px 3px 0;
 }
 
 .prev:hover,
@@ -136,6 +146,19 @@ nav ul.hide {
     }
 }
 
+.CTA {
+    text-align: center;
+}
+
+.CTA a {
+    text-decoration: none;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: yellow;
+    font-weight: 600;
+}
+
 
 /* Weather Summary */
 
@@ -148,6 +171,12 @@ nav ul.hide {
 
 .forecast-card section img {
     display: none;
+}
+
+.forecast-card {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
 }
 
 
@@ -166,4 +195,5 @@ td {
 
 footer {
     text-align: center;
+    padding: 15px;
 }

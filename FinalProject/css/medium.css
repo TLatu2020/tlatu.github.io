@@ -1,5 +1,23 @@
-@media only screen and (min-width: 700px) {
+@media only screen and (min-width: 55rem) {
     /* GENERAL */
+    header {
+        height: 10.5rem;
+    }
+    header img {
+        padding: 2% 0 0 2%;
+    }
+    .contact-info {
+        float: right;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .socials {
+        display: grid;
+        grid-template-rows: repeat(4, 1fr);
+        justify-items: center;
+        align-items: center;
+        width: 10rem;
+    }
     nav button {
         display: none;
     }
@@ -19,6 +37,9 @@
         padding: .6rem 1rem;
     }
     /* HOME PAGE */
+    .slideshow-container {
+        display: block;
+    }
     /* 3-day Forecast */
     .forecast-card section img {
         display: block;

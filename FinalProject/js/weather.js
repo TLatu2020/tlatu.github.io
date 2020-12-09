@@ -116,7 +116,7 @@ fetch(OneURL)
         console.log(jsObject);
 
         let card = document.createElement('section');
-        let title = document.createElement('h3');
+        let title = document.createElement('h2');
         let temp = document.createElement('p');
         let condition = document.createElement('p');
         let humidity = document.createElement('p');
@@ -139,26 +139,43 @@ fetch(OneURL)
 
         //Forecast
 
-        const fiveDays = jsObject.daily; //.filter(item => item.temp.includes('day'));
+        var date = new Date();
 
-        console.log(fiveDays);
+
+        for (let d = 0; d < 4; d++) {
+            date.setDate(date.getDate() + 1);
+
+            //console.log(date);
+
+            let day = date.toString();
+
+            day = day.slice(0, 3);
+
+            console.log(day);
+
+
+
+
+        }
+
+        console.log(date);
+
+        const fiveDays = jsObject.daily; //.filter(item => item.temp.includes('day'));
 
         const threeDays = fiveDays.slice(0, 3);
 
         console.log(threeDays);
 
-        for (i = 0; i < 1; i++) {
-            threeDays.forEach(forecast => {
+
+
+        //for (i = 0; i < 1; i++) {
+        threeDays.forEach(forecast => {
 
                 let fcard = document.createElement('section');
+
                 let weekDay = document.createElement('p');
                 let fimage = document.createElement('img');
                 let ftemp = document.createElement('p');
-
-                var date = new Date(forecast.dt);
-                var day = date.toString();
-                day = day.slice(0, 3);
-                weekDay.textContent = day;
 
 
                 fimage.setAttribute('src', "https://via.placeholder.com/100.png?text=Placeholder");
@@ -170,12 +187,48 @@ fetch(OneURL)
                 fcard.className = "days";
 
                 fcard.appendChild(weekDay);
-                fcard.appendChild(image);
+                fcard.appendChild(fimage);
                 fcard.appendChild(ftemp);
 
 
 
                 document.querySelector('div.forecast-card').appendChild(fcard);
             })
+            //}
+
+
+
+    })
+    .then(function(imagesToLoad = document.querySelectorAll('img[data-src]')) {
+            const loadImages = (image) => {
+                image.setAttribute('src', image.getAttribute('data-src'));
+                image.onload = () => {
+                    image.removeAttribute('data-src');
+                };
+            };
+
+            const imgOptions = {
+                threshold: 0
+            };
+
+            if ('IntersectionObserver' in window) {
+                const observer = new IntersectionObserver((items, observer) => {
+                    items.forEach((item) => {
+                        if (item.isIntersecting) {
+                            loadImages(item.target);
+                            observer.unobserve(item.target);
+                        }
+                    });
+                }, imgOptions);
+                imagesToLoad.forEach((img) => {
+                    observer.observe(img);
+                });
+            } else {
+                imagesToLoad.forEach((img) => {
+                    loadImages(img);
+                });
+            }
         }
-    });
+
+
+    );

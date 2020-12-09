@@ -19,3 +19,19 @@ function toggleMenu() {
 }
 
 //Rental Information
+
+var date = new Date();
+
+for (let d = 0; d < 3; d++) {
+    date.setDate(date.getDate() + 1);
+
+    //console.log(date);
+
+    let day = date.toString();
+
+    day = day.slice(0, 3);
+
+    console.log(day);
+
+
+}
