@@ -41,6 +41,11 @@
         display: block;
     }
     /* 3-day Forecast */
+    .forecast-card {
+        max-width: 40rem;
+        margin: auto;
+        text-align: center;
+    }
     .forecast-card section img {
         display: block;
     }

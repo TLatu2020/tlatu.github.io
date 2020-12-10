@@ -140,6 +140,7 @@ fetch(OneURL)
         //Forecast
 
         var date = new Date();
+        var days = [];
 
 
         for (let d = 0; d < 4; d++) {
@@ -151,21 +152,15 @@ fetch(OneURL)
 
             day = day.slice(0, 3);
 
-            console.log(day);
-
-
-
-
+            days.push(day);
         }
-
-        console.log(date);
+        console.log(days);
 
         const fiveDays = jsObject.daily; //.filter(item => item.temp.includes('day'));
 
         const threeDays = fiveDays.slice(0, 3);
 
         console.log(threeDays);
-
 
 
         //for (i = 0; i < 1; i++) {
@@ -176,6 +171,23 @@ fetch(OneURL)
                 let weekDay = document.createElement('p');
                 let fimage = document.createElement('img');
                 let ftemp = document.createElement('p');
+
+                if (forecast == threeDays[0]) {
+                    weekDay.textContent = days[1];
+                } else if (forecast == threeDays[1]) {
+                    weekDay.textContent = days[2];
+                } else if (forecast == threeDays[2]) {
+                    weekDay.textContent = days[3];
+                }
+
+                console.log(days);
+
+
+
+                /*let dats = 0;
+                for (d = 0; d < 3; d++) {
+                    dats += 1;
+                }*/
 
 
                 fimage.setAttribute('src', "https://via.placeholder.com/100.png?text=Placeholder");
