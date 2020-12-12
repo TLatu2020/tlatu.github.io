@@ -32,5 +32,10 @@
         justify-items: center;
     }
     /* RESERVATIONS */
+    /* TOURS */
+    .activities {
+        max-width: 55rem;
+        margin: auto;
+    }
     /* FOOTER */
 }

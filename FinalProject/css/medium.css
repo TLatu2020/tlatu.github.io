@@ -40,6 +40,9 @@
     .slideshow-container {
         display: block;
     }
+    .weather-card {
+        padding: 7% 0 2% 0;
+    }
     /* 3-day Forecast */
     .forecast-card {
         max-width: 40rem;
@@ -52,6 +55,11 @@
     /* RESERVATIONS */
     form {
         max-width: 40rem;
+        margin: auto;
+    }
+    /* TOURS */
+    .activities {
+        max-width: 35rem;
         margin: auto;
     }
 }
