@@ -37,6 +37,10 @@
         padding: .6rem 1rem;
     }
     /* HOME PAGE */
+    .home {
+        max-width: 45rem;
+        margin: auto;
+    }
     .slideshow-container {
         display: block;
     }
