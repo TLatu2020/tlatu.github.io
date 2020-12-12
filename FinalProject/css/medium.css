@@ -49,4 +49,9 @@
     .forecast-card section img {
         display: block;
     }
+    /* RESERVATIONS */
+    form {
+        max-width: 40rem;
+        margin: auto;
+    }
 }

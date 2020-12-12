@@ -7,11 +7,12 @@ h3 {
     font-family: 'Roboto Slab', sans-serif;
 }
 
-body {
+
+/*body {
     background-image: url(../images/backgroundCozumel.jpg);
     background-repeat: no-repeat;
     background-size: 100% 100%;
-}
+}*/
 
 main p,
 li,
@@ -69,6 +70,10 @@ nav ul.hide {
     content: "";
     display: table;
     clear: both;
+}
+
+.contact-info {
+    text-align: center;
 }
 
 
@@ -196,6 +201,51 @@ tr,
 td {
     border: 1px solid black;
     border-collapse: collapse;
+}
+
+
+/* RESERVATIONS */
+
+form {
+    max-width: 26rem;
+    margin: auto;
+}
+
+form fieldset {
+    display: flex;
+    flex-direction: column;
+}
+
+form fieldset {
+    margin: 1.8rem 0;
+    border-radius: 10px;
+    padding: .5rem 2%;
+}
+
+form legend {
+    margin: 0 1rem;
+    padding: 0 .5rem;
+}
+
+form label,
+label.top input,
+select,
+textarea,
+form div {
+    display: block;
+    border-radius: 4px;
+    padding: .67rem;
+    width: 100%;
+    max-width: 18rem;
+    margin: auto;
+}
+
+form label.top input:required {
+    border-left: red solid 6px;
+}
+
+form label.top input:required:valid {
+    border-left: green solid 6px;
 }
 
 

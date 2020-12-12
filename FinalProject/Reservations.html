@@ -15,11 +15,28 @@
 <body>
     <header>
         <picture>
-            <img src="images/~Scoots Logo.png" alt="Scoots Logo">
+            <img src="images/ScootsLogo.png" alt="Scoots Logo">
         </picture>
+        <div class="contact-info">
+            <div class="info">
+                <h3>Scoots</h3>
+                <p>&#128392; (number)(address) Cozumel Mexico</p>
+                <p>&#9743; 999.999.9999</p>
+                <p>
+                    &#9993; Scoots@email.com
+                </p>
+            </div>
+            <div class="socials">
+                <a href="https://facebook.com" target="_blank"><img src="images/facebook.png" alt="Facebook icon"></a>
+                <a href="https://instagram.com" target="_blank"><img src="images/instagram.png" alt="Instagram icon"></a>
+                <a href="https://pinterest.com" target="_blank"><img src="images/pinterest.png" alt="Pinterest icon"></a>
+                <a href="https://twitter.com" target="_blank"><img src="images/twitter.png" alt="Twitter icon"></a>
+            </div>
 
+        </div>
     </header>
     <nav class="clearfix">
+        <button onclick="toggleMenu()">&#9776; Menu</button>
         <ul id="primaryNav" class="hide">
             <li><a href="index.html">Home</a></li>
             <li><a href="rentals.html">Rentals</a></li>
@@ -48,10 +65,10 @@
         <form method="GET" action="confirmation.html">
             <fieldset>
                 <legend>Vehicle Rental</legend>
-                <label>Pick up Date:
+                <label class="top">Pick up Date:
                     <input type="date" name="pick up">
                 </label>
-                <label>Drop off Date
+                <label class="top">Drop off Date
                     <input type="date" name="drop off">
                 </label>
                 <label>Vehicle Type
@@ -65,7 +82,7 @@
                         <option value="fourDoor">Jeep Wrangler 4 Door - 5 person</option>
                     </select>
                 </label>
-                <label>Cruise Line (if applicable)
+                <label class="top">Cruise Line (if applicable)
                     <input type="text" name="cruiseLine">
                 </label>
                 <div>Special Accomodations or Delivery Requests</div>
@@ -75,16 +92,16 @@
             </fieldset>
             <fieldset>
                 <legend>Personal Information</legend>
-                <label>Name
+                <label class="top">Name
                     <input type="text" name="name" pattern="" required>
                 </label>
-                <label>Email
+                <label class="top">Email
                     <input type="email" name="email">
                 </label>
-                <label>Phone Number
+                <label class="top">Phone Number
                     <input type="phone">
                 </label>
-                <label>Country
+                <label class="top">Country
                     <input type="text" name="country">
                 </label>
             </fieldset>
