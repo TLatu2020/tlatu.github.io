@@ -11,12 +11,10 @@ h1 {
     padding: 4%;
 }
 
-
-/*body {
-    background-image: url(../images/backgroundCozumel.jpg);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-}*/
+body {
+    background: url(../images/ocean-waters.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
 
 main p,
 li,

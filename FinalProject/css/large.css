@@ -1,7 +1,8 @@
 @media only screen and (min-width: 90rem) {
     /* General */
     /* HOME PAGE */
-    .weather-card {
+    .weather-card,
+    .forecast-cast {
         float: left;
         width: 50%;
     }

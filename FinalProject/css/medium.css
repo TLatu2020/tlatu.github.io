@@ -40,7 +40,8 @@
     .slideshow-container {
         display: block;
     }
-    .weather-card {
+    .weather-card,
+    .forecast-card {
         padding: 7% 0 2% 0;
     }
     /* 3-day Forecast */
