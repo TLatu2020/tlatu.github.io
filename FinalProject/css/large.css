@@ -1,10 +1,10 @@
 @media only screen and (min-width: 90rem) {
     /* General */
-    /* HOME PAGE */
-    .home {
+    main {
         max-width: 85rem;
         margin: auto;
     }
+    /* HOME PAGE */
     .weather-card,
     .forecast-cast {
         float: left;
@@ -47,6 +47,7 @@
     .CTA {
         margin-top: 5rem;
     }
+    /* RENTALS */
     /* RESERVATIONS */
     /* TOURS */
     .activities {

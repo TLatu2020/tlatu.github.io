@@ -123,7 +123,7 @@ fetch(OneURL)
         let image = document.createElement('img');
 
         title.textContent = "Current Weather";
-        temp.textContent = jsObject.current.temp + " °F";
+        temp.textContent = Math.round(jsObject.current.temp) + " °F";
         condition.textContent = "Condition: " + jsObject.current.weather[0].main;
         humidity.textContent = "Humidity: " + jsObject.current.humidity + " %";
         image.setAttribute('src', 'https://openweathermap.org/img/wn/' + jsObject.current.weather[0].icon + '@2x.png')
@@ -173,11 +173,11 @@ fetch(OneURL)
                 let ftemp = document.createElement('p');
 
                 if (forecast == threeDays[0]) {
-                    weekDay.textContent = days[1];
+                    weekDay.textContent = days[0];
                 } else if (forecast == threeDays[1]) {
-                    weekDay.textContent = days[2];
+                    weekDay.textContent = days[1];
                 } else if (forecast == threeDays[2]) {
-                    weekDay.textContent = days[3];
+                    weekDay.textContent = days[2];
                 }
 
                 console.log(days);

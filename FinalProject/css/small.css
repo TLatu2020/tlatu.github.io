@@ -12,8 +12,14 @@ h1 {
 }
 
 body {
-    background: url(../images/ocean-waters.jpg) no-repeat center center fixed;
+    background: url(../images/ocean-waters\(1500px\).jpg) no-repeat center center fixed;
     background-size: cover;
+}
+
+main {
+    max-width: 360px;
+    margin: auto;
+    background-color: rgba(77, 60, 205, 0.75);
 }
 
 main p,
@@ -81,11 +87,6 @@ nav ul.hide {
 
 /* HOME PAGE */
 
-.home {
-    max-width: 360px;
-    margin: auto;
-}
-
 
 /*Slideshow*/
 
@@ -140,7 +141,6 @@ nav ul.hide {
 .text {
     padding: 8px 12px;
     /*position: absolute;*/
-    width: 100%;
     text-align: center;
     font-size: 20px;
 }
@@ -208,6 +208,16 @@ tr,
 td {
     border: 1px solid black;
     border-collapse: collapse;
+    margin: auto;
+}
+
+tbody tr {
+    background-color: #00ffaf;
+}
+
+thead,
+.rental-cards tbody tr:nth-of-type(even) {
+    background-color: white;
 }
 
 
