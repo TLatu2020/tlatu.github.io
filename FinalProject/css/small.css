@@ -17,9 +17,18 @@ body {
 }
 
 main {
-    max-width: 360px;
+    max-width: 390px;
     margin: auto;
     background-color: rgba(77, 60, 205, 0.75);
+}
+
+main img[data-src] {
+    filter: blur(0.2em);
+}
+
+main img {
+    filter: blur(0em);
+    transition: filter 0.5s;
 }
 
 main p,
@@ -209,6 +218,8 @@ td {
     border: 1px solid black;
     border-collapse: collapse;
     margin: auto;
+    padding: 5px;
+    text-align: center;
 }
 
 tbody tr {
@@ -218,6 +229,16 @@ tbody tr {
 thead,
 .rental-cards tbody tr:nth-of-type(even) {
     background-color: white;
+}
+
+.scooters,
+.ATV,
+.wranglers {
+    text-align: center;
+}
+
+.rental-cards {
+    padding-bottom: 20px;
 }
 
 
