@@ -49,10 +49,19 @@
     }
     /* RENTALS */
     /* RESERVATIONS */
+    .reservations {
+        max-width: 800px;
+    }
+    .requirements {
+        background-color: #00ffaf;
+        padding: 5px;
+        border-radius: 5px;
+    }
     /* TOURS */
     .activities {
-        max-width: 55rem;
+        max-width: 900px;
         margin: auto;
+        padding-bottom: 30px;
     }
     /* FOOTER */
 }

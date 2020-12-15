@@ -211,6 +211,11 @@ nav ul.hide {
 
 /* RENTALS */
 
+.requirements {
+    max-width: 640px;
+    margin: auto;
+}
+
 table,
 th,
 tr,
