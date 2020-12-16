@@ -62,4 +62,8 @@
         margin: auto;
     }
     /* TOURS */
+    .activities {
+        margin: 0 30px 0 30px;
+        padding-bottom: 30px;
+    }
 }
