@@ -134,6 +134,7 @@ nav ul.hide {
     width: auto;
     margin-top: -22px;
     padding: 16px;
+    background-color: #ffd9aa;
     color: blue;
     font-weight: bold;
     font-size: 18px;
@@ -183,15 +184,17 @@ nav ul.hide {
 
 .CTA {
     text-align: center;
+    margin: 2rem 0 4rem 0;
 }
 
 .CTA a {
     text-decoration: none;
-    padding: 20px;
+    padding: 1.5rem;
     border: 1px solid black;
     border-radius: 5px;
     background-color: yellow;
     font-weight: 600;
+    font-size: 18px;
 }
 
 
@@ -331,6 +334,7 @@ form input.submitBtn {
 .activities img {
     display: block;
     margin: 0 auto 0 auto;
+    max-width: 100%;
 }
 
 .activities p {

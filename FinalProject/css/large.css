@@ -45,8 +45,9 @@
         max-width: 950px;
         margin: auto;
     }
-    .CTA {
-        margin-top: 5rem;
+    .CTA a {
+        padding: 1.5rem;
+        font-size: 25px;
     }
     /* RENTALS */
     /* RESERVATIONS */

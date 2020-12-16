@@ -60,6 +60,7 @@ fetch(OneURL)
             let fimage = document.createElement('img');
             let ftemp = document.createElement('p');
 
+
             if (forecast == threeDays[0]) {
                 weekDay.textContent = days[0];
             } else if (forecast == threeDays[1]) {
@@ -67,7 +68,6 @@ fetch(OneURL)
             } else if (forecast == threeDays[2]) {
                 weekDay.textContent = days[2];
             }
-
 
 
             fimage.setAttribute('src', "https://via.placeholder.com/100.png?text=Placeholder");
