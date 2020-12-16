@@ -338,6 +338,18 @@ form input.submitBtn {
 }
 
 
+/* CONTACT */
+
+.contact {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.contact p {
+    color: white;
+}
+
+
 /* FOOTER */
 
 footer {
