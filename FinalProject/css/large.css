@@ -2,7 +2,6 @@
     /* General */
     main {
         max-width: 85rem;
-        margin: auto;
     }
     /* HOME PAGE */
     .weather-card,
@@ -43,6 +42,8 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         justify-items: center;
+        max-width: 950px;
+        margin: auto;
     }
     .CTA {
         margin-top: 5rem;
@@ -51,11 +52,6 @@
     /* RESERVATIONS */
     .reservations {
         max-width: 800px;
-    }
-    .requirements {
-        background-color: #00ffaf;
-        padding: 5px;
-        border-radius: 5px;
     }
     /* TOURS */
     .activities {

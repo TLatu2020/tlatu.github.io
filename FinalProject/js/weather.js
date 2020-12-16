@@ -54,39 +54,38 @@ fetch(OneURL)
         //for (i = 0; i < 1; i++) {
         threeDays.forEach(forecast => {
 
-                let fcard = document.createElement('section');
+            let fcard = document.createElement('section');
 
-                let weekDay = document.createElement('p');
-                let fimage = document.createElement('img');
-                let ftemp = document.createElement('p');
+            let weekDay = document.createElement('p');
+            let fimage = document.createElement('img');
+            let ftemp = document.createElement('p');
 
-                if (forecast == threeDays[0]) {
-                    weekDay.textContent = days[0];
-                } else if (forecast == threeDays[1]) {
-                    weekDay.textContent = days[1];
-                } else if (forecast == threeDays[2]) {
-                    weekDay.textContent = days[2];
-                }
-
-
-
-                fimage.setAttribute('src', "https://via.placeholder.com/100.png?text=Placeholder");
-                fimage.setAttribute('data-src', 'https://openweathermap.org/img/wn/' + forecast.weather[0].icon + '@2x.png');
-                fimage.setAttribute('alt', forecast.weather[0].description);
-
-                ftemp.textContent = Math.round(forecast.temp.day) + " °F";
-
-                fcard.className = "days";
-
-                fcard.appendChild(weekDay);
-                fcard.appendChild(fimage);
-                fcard.appendChild(ftemp);
+            if (forecast == threeDays[0]) {
+                weekDay.textContent = days[0];
+            } else if (forecast == threeDays[1]) {
+                weekDay.textContent = days[1];
+            } else if (forecast == threeDays[2]) {
+                weekDay.textContent = days[2];
+            }
 
 
 
-                document.querySelector('div.forecast-card').appendChild(fcard);
-            })
-            //}
+            fimage.setAttribute('src', "https://via.placeholder.com/100.png?text=Placeholder");
+            fimage.setAttribute('data-src', 'https://openweathermap.org/img/wn/' + forecast.weather[0].icon + '@2x.png');
+            fimage.setAttribute('alt', forecast.weather[0].description);
+
+            ftemp.textContent = Math.round(forecast.temp.day) + " °F";
+
+            fcard.className = "days";
+
+            fcard.appendChild(weekDay);
+            fcard.appendChild(fimage);
+            fcard.appendChild(ftemp);
+
+
+
+            document.querySelector('div.forecast-card').appendChild(fcard);
+        })
 
 
 
