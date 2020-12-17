@@ -60,6 +60,7 @@ nav {
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
     text-align: center;
+    margin-top: 10px;
 }
 
 nav ul {
@@ -97,13 +98,16 @@ nav ul.hide {
 
 .contact-info {
     text-align: center;
+    background-color: black;
+    border-radius: 10px;
+    color: white;
 }
 
 .logo img {
     background-color: #4d3ccd;
     border-radius: 10px;
     padding: 0 10px 10px 0;
-    margin: 1.5rem 0 0 3rem;
+    margin: 1.5rem 0 0 1.5rem;
 }
 
 
@@ -371,6 +375,10 @@ form input.submitBtn {
 
 .contact p {
     color: white;
+}
+
+iframe {
+    max-width: 100%;
 }
 
 
