@@ -98,7 +98,7 @@ nav ul.hide {
 
 .contact-info {
     text-align: center;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.6);
     border-radius: 10px;
     color: white;
 }
