@@ -44,7 +44,7 @@
         display: block;
     }
     .weather-card,
-    .forecast-card {
+    .forecast {
         padding: 7% 0 2% 0;
     }
     /* 3-day Forecast */
