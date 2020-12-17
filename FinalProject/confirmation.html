@@ -6,18 +6,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Scoots - Confirmation Page</title>
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="small.css">
-    <link rel="stylesheet" href="medium.css">
-    <link rel="stylesheet" href="large.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
     <script src="js/script.js" defer></script>
 </head>
 
 <body>
     <header>
+        <picture class="logo">
+            <img src="images/ScootsLogo.png" alt="Scoots Logo">
+        </picture>
+        <div class="contact-info">
+            <div class="info">
+                <h3>Scoots</h3>
+                <p>&#128392; (number)(address) Cozumel Mexico</p>
+                <p>&#9743; 999.999.9999</p>
+                <p>
+                    &#9993; Scoots@email.com
+                </p>
+            </div>
+            <div class="socials">
+                <a href="https://facebook.com" target="_blank"><img src="images/facebook.png" alt="Facebook icon"></a>
+                <a href="https://instagram.com" target="_blank"><img src="images/instagram.png" alt="Instagram icon"></a>
+                <a href="https://pinterest.com" target="_blank"><img src="images/pinterest.png" alt="Pinterest icon"></a>
+                <a href="https://twitter.com" target="_blank"><img src="images/twitter.png" alt="Twitter icon"></a>
+            </div>
 
+        </div>
     </header>
-    <nav>
-        <ul>
+    <nav class="clearfix">
+        <button onclick="toggleMenu()">&#9776; Menu</button>
+        <ul id="primaryNav" class="hide">
             <li><a href="index.html">Home</a></li>
             <li><a href="rentals.html">Rentals</a></li>
             <li><a href="reservations.html">Reservations</a></li>
@@ -25,7 +45,7 @@
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
-    <main>
+    <main class="confirmation">
         <p>
             Thank you! Your comment / reservation has been received. We will reply to you soon with further information.
         </p>

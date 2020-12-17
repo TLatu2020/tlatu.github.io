@@ -99,6 +99,13 @@ nav ul.hide {
     text-align: center;
 }
 
+.logo img {
+    background-color: #4d3ccd;
+    border-radius: 10px;
+    padding: 0 10px 10px 0;
+    margin: 1.5rem 0 0 3rem;
+}
+
 
 /* HOME PAGE */
 
@@ -372,6 +379,21 @@ form input.submitBtn {
 .activities {
     margin: 0 10px 0 10px;
     padding-bottom: 30px;
+}
+
+
+/* CONFIRMATION */
+
+.confirmation {
+    height: 600px;
+}
+
+.confirmation p {
+    max-width: 55rem;
+    margin: 2rem auto 0 auto;
+    color: white;
+    font-size: 25px;
+    padding: 20px;
 }
 
 
